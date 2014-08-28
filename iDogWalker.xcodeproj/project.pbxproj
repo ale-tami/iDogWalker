@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DAB86CA19A7ADB200388180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86C919A7ADB200388180 /* Foundation.framework */; };
+		4DAB86CC19A7ADB200388180 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86CB19A7ADB200388180 /* CoreGraphics.framework */; };
+		4DAB86CE19A7ADB200388180 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86CD19A7ADB200388180 /* UIKit.framework */; };
+		4DAB86D419A7ADB200388180 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB86D219A7ADB200388180 /* InfoPlist.strings */; };
+		4DAB86D619A7ADB200388180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB86D519A7ADB200388180 /* main.m */; };
+		4DAB86DA19A7ADB200388180 /* DWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB86D919A7ADB200388180 /* DWAppDelegate.m */; };
+		4DAB86DD19A7ADB200388180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB86DB19A7ADB200388180 /* Main.storyboard */; };
+		4DAB86E019A7ADB200388180 /* DWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB86DF19A7ADB200388180 /* DWViewController.m */; };
+		4DAB86E219A7ADB200388180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB86E119A7ADB200388180 /* Images.xcassets */; };
+		4DAB86E919A7ADB200388180 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86E819A7ADB200388180 /* XCTest.framework */; };
+		4DAB86EA19A7ADB200388180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86C919A7ADB200388180 /* Foundation.framework */; };
+		4DAB86EB19A7ADB200388180 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86CD19A7ADB200388180 /* UIKit.framework */; };
+		4DAB86F319A7ADB200388180 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB86F119A7ADB200388180 /* InfoPlist.strings */; };
+		4DAB86F519A7ADB200388180 /* iDogWalkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB86F419A7ADB200388180 /* iDogWalkerTests.m */; };
+		4DAB86FF19A7B0CC00388180 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86FE19A7B0CC00388180 /* Parse.framework */; };
+		4DAB870B19A7B8E200388180 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870019A7B8E200388180 /* AdSupport.framework */; };
+		4DAB870C19A7B8E200388180 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870119A7B8E200388180 /* AudioToolbox.framework */; };
+		4DAB870D19A7B8E200388180 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870219A7B8E200388180 /* CFNetwork.framework */; };
+		4DAB870E19A7B8E200388180 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870319A7B8E200388180 /* CoreAudio.framework */; };
+		4DAB870F19A7B8E200388180 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870419A7B8E200388180 /* CoreLocation.framework */; };
+		4DAB871019A7B8E200388180 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870519A7B8E200388180 /* libz.dylib */; };
+		4DAB871119A7B8E200388180 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870619A7B8E200388180 /* MobileCoreServices.framework */; };
+		4DAB871219A7B8E200388180 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870719A7B8E200388180 /* QuartzCore.framework */; };
+		4DAB871319A7B8E200388180 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870819A7B8E200388180 /* Security.framework */; };
+		4DAB871419A7B8E200388180 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870919A7B8E200388180 /* StoreKit.framework */; };
+		4DAB871519A7B8E200388180 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870A19A7B8E200388180 /* SystemConfiguration.framework */; };
+		4DAB871719A7B90700388180 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB871619A7B90700388180 /* FacebookSDK.framework */; };
+		4DB62AFD19ABD71D00A595C2 /* DWRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62AFC19ABD71D00A595C2 /* DWRegistrationViewController.m */; };
+		4DB62B0119ABDCD700A595C2 /* DWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0019ABDCD700A595C2 /* DWUser.m */; };
+		4DB62B0419ACC39200A595C2 /* DWUserOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0319ACC39200A595C2 /* DWUserOperations.m */; };
+		4DB62B0719ACC45700A595C2 /* DWOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0619ACC45700A595C2 /* DWOperations.m */; };
+		4DB62B0919ACE1D000A595C2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB62B0819ACE1D000A595C2 /* MapKit.framework */; };
+		4DB62B0C19ACE31800A595C2 /* DWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0B19ACE31800A595C2 /* DWMapViewController.m */; };
+		4DB62B1019AD1EAD00A595C2 /* DWCheckIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0F19AD1EAD00A595C2 /* DWCheckIn.m */; };
+		4DB62B1319AD3F4700A595C2 /* DWProtoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B1219AD3F4700A595C2 /* DWProtoViewController.m */; };
+		4DB62B1619AE657F00A595C2 /* DWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B1519AE657F00A595C2 /* DWTableViewCell.m */; };
+		4DB62B1A19AE675000A595C2 /* DWProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B1919AE675000A595C2 /* DWProfileViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DAB86EC19A7ADB200388180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DAB86BE19A7ADB200388180 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DAB86C519A7ADB200388180;
+			remoteInfo = iDogWalker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DAB86C619A7ADB200388180 /* iDogWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDogWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAB86C919A7ADB200388180 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4DAB86CB19A7ADB200388180 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4DAB86CD19A7ADB200388180 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4DAB86D119A7ADB200388180 /* iDogWalker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDogWalker-Info.plist"; sourceTree = "<group>"; };
+		4DAB86D319A7ADB200388180 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DAB86D519A7ADB200388180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DAB86D719A7ADB200388180 /* iDogWalker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iDogWalker-Prefix.pch"; sourceTree = "<group>"; };
+		4DAB86D819A7ADB200388180 /* DWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWAppDelegate.h; sourceTree = "<group>"; };
+		4DAB86D919A7ADB200388180 /* DWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWAppDelegate.m; sourceTree = "<group>"; };
+		4DAB86DC19A7ADB200388180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DAB86DE19A7ADB200388180 /* DWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWViewController.h; sourceTree = "<group>"; };
+		4DAB86DF19A7ADB200388180 /* DWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWViewController.m; sourceTree = "<group>"; };
+		4DAB86E119A7ADB200388180 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4DAB86E719A7ADB200388180 /* iDogWalkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDogWalkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAB86E819A7ADB200388180 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4DAB86F019A7ADB200388180 /* iDogWalkerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDogWalkerTests-Info.plist"; sourceTree = "<group>"; };
+		4DAB86F219A7ADB200388180 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DAB86F419A7ADB200388180 /* iDogWalkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iDogWalkerTests.m; sourceTree = "<group>"; };
+		4DAB86FE19A7B0CC00388180 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		4DAB870019A7B8E200388180 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		4DAB870119A7B8E200388180 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4DAB870219A7B8E200388180 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4DAB870319A7B8E200388180 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		4DAB870419A7B8E200388180 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4DAB870519A7B8E200388180 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4DAB870619A7B8E200388180 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4DAB870719A7B8E200388180 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DAB870819A7B8E200388180 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4DAB870919A7B8E200388180 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4DAB870A19A7B8E200388180 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DAB871619A7B90700388180 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		4DB62AFB19ABD71D00A595C2 /* DWRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWRegistrationViewController.h; sourceTree = "<group>"; };
+		4DB62AFC19ABD71D00A595C2 /* DWRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWRegistrationViewController.m; sourceTree = "<group>"; };
+		4DB62AFF19ABDCD700A595C2 /* DWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWUser.h; sourceTree = "<group>"; };
+		4DB62B0019ABDCD700A595C2 /* DWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWUser.m; sourceTree = "<group>"; };
+		4DB62B0219ACC39200A595C2 /* DWUserOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWUserOperations.h; sourceTree = "<group>"; };
+		4DB62B0319ACC39200A595C2 /* DWUserOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWUserOperations.m; sourceTree = "<group>"; };
+		4DB62B0519ACC45700A595C2 /* DWOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWOperations.h; sourceTree = "<group>"; };
+		4DB62B0619ACC45700A595C2 /* DWOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWOperations.m; sourceTree = "<group>"; };
+		4DB62B0819ACE1D000A595C2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4DB62B0A19ACE31800A595C2 /* DWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWMapViewController.h; sourceTree = "<group>"; };
+		4DB62B0B19ACE31800A595C2 /* DWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWMapViewController.m; sourceTree = "<group>"; };
+		4DB62B0E19AD1EAD00A595C2 /* DWCheckIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWCheckIn.h; sourceTree = "<group>"; };
+		4DB62B0F19AD1EAD00A595C2 /* DWCheckIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWCheckIn.m; sourceTree = "<group>"; };
+		4DB62B1119AD3F4700A595C2 /* DWProtoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWProtoViewController.h; sourceTree = "<group>"; };
+		4DB62B1219AD3F4700A595C2 /* DWProtoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWProtoViewController.m; sourceTree = "<group>"; };
+		4DB62B1419AE657F00A595C2 /* DWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTableViewCell.h; sourceTree = "<group>"; };
+		4DB62B1519AE657F00A595C2 /* DWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTableViewCell.m; sourceTree = "<group>"; };
+		4DB62B1819AE675000A595C2 /* DWProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWProfileViewController.h; sourceTree = "<group>"; };
+		4DB62B1919AE675000A595C2 /* DWProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWProfileViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DAB86C319A7ADB200388180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB62B0919ACE1D000A595C2 /* MapKit.framework in Frameworks */,
+				4DAB870B19A7B8E200388180 /* AdSupport.framework in Frameworks */,
+				4DAB870C19A7B8E200388180 /* AudioToolbox.framework in Frameworks */,
+				4DAB870D19A7B8E200388180 /* CFNetwork.framework in Frameworks */,
+				4DAB870E19A7B8E200388180 /* CoreAudio.framework in Frameworks */,
+				4DAB870F19A7B8E200388180 /* CoreLocation.framework in Frameworks */,
+				4DAB871019A7B8E200388180 /* libz.dylib in Frameworks */,
+				4DAB871119A7B8E200388180 /* MobileCoreServices.framework in Frameworks */,
+				4DAB871219A7B8E200388180 /* QuartzCore.framework in Frameworks */,
+				4DAB871319A7B8E200388180 /* Security.framework in Frameworks */,
+				4DAB871419A7B8E200388180 /* StoreKit.framework in Frameworks */,
+				4DAB871519A7B8E200388180 /* SystemConfiguration.framework in Frameworks */,
+				4DAB86CC19A7ADB200388180 /* CoreGraphics.framework in Frameworks */,
+				4DAB86CE19A7ADB200388180 /* UIKit.framework in Frameworks */,
+				4DAB871719A7B90700388180 /* FacebookSDK.framework in Frameworks */,
+				4DAB86FF19A7B0CC00388180 /* Parse.framework in Frameworks */,
+				4DAB86CA19A7ADB200388180 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DAB86E419A7ADB200388180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAB86E919A7ADB200388180 /* XCTest.framework in Frameworks */,
+				4DAB86EB19A7ADB200388180 /* UIKit.framework in Frameworks */,
+				4DAB86EA19A7ADB200388180 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DAB86BD19A7ADB200388180 = {
+			isa = PBXGroup;
+			children = (
+				4DAB86CF19A7ADB200388180 /* iDogWalker */,
+				4DAB86EE19A7ADB200388180 /* iDogWalkerTests */,
+				4DAB86C819A7ADB200388180 /* Frameworks */,
+				4DAB86C719A7ADB200388180 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DAB86C719A7ADB200388180 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB86C619A7ADB200388180 /* iDogWalker.app */,
+				4DAB86E719A7ADB200388180 /* iDogWalkerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DAB86C819A7ADB200388180 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB62B0819ACE1D000A595C2 /* MapKit.framework */,
+				4DAB870019A7B8E200388180 /* AdSupport.framework */,
+				4DAB870119A7B8E200388180 /* AudioToolbox.framework */,
+				4DAB870219A7B8E200388180 /* CFNetwork.framework */,
+				4DAB870319A7B8E200388180 /* CoreAudio.framework */,
+				4DAB870419A7B8E200388180 /* CoreLocation.framework */,
+				4DAB870519A7B8E200388180 /* libz.dylib */,
+				4DAB870619A7B8E200388180 /* MobileCoreServices.framework */,
+				4DAB870719A7B8E200388180 /* QuartzCore.framework */,
+				4DAB870819A7B8E200388180 /* Security.framework */,
+				4DAB870919A7B8E200388180 /* StoreKit.framework */,
+				4DAB870A19A7B8E200388180 /* SystemConfiguration.framework */,
+				4DAB86C919A7ADB200388180 /* Foundation.framework */,
+				4DAB86CB19A7ADB200388180 /* CoreGraphics.framework */,
+				4DAB86CD19A7ADB200388180 /* UIKit.framework */,
+				4DAB86E819A7ADB200388180 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DAB86CF19A7ADB200388180 /* iDogWalker */ = {
+			isa = PBXGroup;
+			children = (
+				4DB62B1719AE658E00A595C2 /* Subclasses */,
+				4DB62B0D19AD1E8600A595C2 /* ParseObjects */,
+				4DB62AFE19ABD72C00A595C2 /* Operations */,
+				4DAB86D819A7ADB200388180 /* DWAppDelegate.h */,
+				4DAB86D919A7ADB200388180 /* DWAppDelegate.m */,
+				4DAB86DB19A7ADB200388180 /* Main.storyboard */,
+				4DAB86DE19A7ADB200388180 /* DWViewController.h */,
+				4DAB86DF19A7ADB200388180 /* DWViewController.m */,
+				4DB62AFB19ABD71D00A595C2 /* DWRegistrationViewController.h */,
+				4DB62AFC19ABD71D00A595C2 /* DWRegistrationViewController.m */,
+				4DB62B0A19ACE31800A595C2 /* DWMapViewController.h */,
+				4DB62B0B19ACE31800A595C2 /* DWMapViewController.m */,
+				4DB62B1819AE675000A595C2 /* DWProfileViewController.h */,
+				4DB62B1919AE675000A595C2 /* DWProfileViewController.m */,
+				4DAB86E119A7ADB200388180 /* Images.xcassets */,
+				4DAB86D019A7ADB200388180 /* Supporting Files */,
+			);
+			path = iDogWalker;
+			sourceTree = "<group>";
+		};
+		4DAB86D019A7ADB200388180 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB871619A7B90700388180 /* FacebookSDK.framework */,
+				4DAB86FE19A7B0CC00388180 /* Parse.framework */,
+				4DAB86D119A7ADB200388180 /* iDogWalker-Info.plist */,
+				4DAB86D219A7ADB200388180 /* InfoPlist.strings */,
+				4DAB86D519A7ADB200388180 /* main.m */,
+				4DAB86D719A7ADB200388180 /* iDogWalker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DAB86EE19A7ADB200388180 /* iDogWalkerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB86F419A7ADB200388180 /* iDogWalkerTests.m */,
+				4DAB86EF19A7ADB200388180 /* Supporting Files */,
+			);
+			path = iDogWalkerTests;
+			sourceTree = "<group>";
+		};
+		4DAB86EF19A7ADB200388180 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB86F019A7ADB200388180 /* iDogWalkerTests-Info.plist */,
+				4DAB86F119A7ADB200388180 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DB62AFE19ABD72C00A595C2 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				4DB62B0219ACC39200A595C2 /* DWUserOperations.h */,
+				4DB62B0319ACC39200A595C2 /* DWUserOperations.m */,
+				4DB62B0519ACC45700A595C2 /* DWOperations.h */,
+				4DB62B0619ACC45700A595C2 /* DWOperations.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		4DB62B0D19AD1E8600A595C2 /* ParseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				4DB62AFF19ABDCD700A595C2 /* DWUser.h */,
+				4DB62B0019ABDCD700A595C2 /* DWUser.m */,
+				4DB62B0E19AD1EAD00A595C2 /* DWCheckIn.h */,
+				4DB62B0F19AD1EAD00A595C2 /* DWCheckIn.m */,
+			);
+			name = ParseObjects;
+			sourceTree = "<group>";
+		};
+		4DB62B1719AE658E00A595C2 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				4DB62B1119AD3F4700A595C2 /* DWProtoViewController.h */,
+				4DB62B1219AD3F4700A595C2 /* DWProtoViewController.m */,
+				4DB62B1419AE657F00A595C2 /* DWTableViewCell.h */,
+				4DB62B1519AE657F00A595C2 /* DWTableViewCell.m */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DAB86C519A7ADB200388180 /* iDogWalker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DAB86F819A7ADB200388180 /* Build configuration list for PBXNativeTarget "iDogWalker" */;
+			buildPhases = (
+				4DAB86C219A7ADB200388180 /* Sources */,
+				4DAB86C319A7ADB200388180 /* Frameworks */,
+				4DAB86C419A7ADB200388180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDogWalker;
+			productName = iDogWalker;
+			productReference = 4DAB86C619A7ADB200388180 /* iDogWalker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DAB86E619A7ADB200388180 /* iDogWalkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DAB86FB19A7ADB200388180 /* Build configuration list for PBXNativeTarget "iDogWalkerTests" */;
+			buildPhases = (
+				4DAB86E319A7ADB200388180 /* Sources */,
+				4DAB86E419A7ADB200388180 /* Frameworks */,
+				4DAB86E519A7ADB200388180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DAB86ED19A7ADB200388180 /* PBXTargetDependency */,
+			);
+			name = iDogWalkerTests;
+			productName = iDogWalkerTests;
+			productReference = 4DAB86E719A7ADB200388180 /* iDogWalkerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DAB86BE19A7ADB200388180 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alejandro Tami";
+				TargetAttributes = {
+					4DAB86E619A7ADB200388180 = {
+						TestTargetID = 4DAB86C519A7ADB200388180;
+					};
+				};
+			};
+			buildConfigurationList = 4DAB86C119A7ADB200388180 /* Build configuration list for PBXProject "iDogWalker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DAB86BD19A7ADB200388180;
+			productRefGroup = 4DAB86C719A7ADB200388180 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DAB86C519A7ADB200388180 /* iDogWalker */,
+				4DAB86E619A7ADB200388180 /* iDogWalkerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DAB86C419A7ADB200388180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAB86E219A7ADB200388180 /* Images.xcassets in Resources */,
+				4DAB86D419A7ADB200388180 /* InfoPlist.strings in Resources */,
+				4DAB86DD19A7ADB200388180 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DAB86E519A7ADB200388180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAB86F319A7ADB200388180 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DAB86C219A7ADB200388180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB62B1019AD1EAD00A595C2 /* DWCheckIn.m in Sources */,
+				4DB62B0C19ACE31800A595C2 /* DWMapViewController.m in Sources */,
+				4DAB86D619A7ADB200388180 /* main.m in Sources */,
+				4DB62B0419ACC39200A595C2 /* DWUserOperations.m in Sources */,
+				4DAB86E019A7ADB200388180 /* DWViewController.m in Sources */,
+				4DB62B0719ACC45700A595C2 /* DWOperations.m in Sources */,
+				4DB62AFD19ABD71D00A595C2 /* DWRegistrationViewController.m in Sources */,
+				4DB62B1A19AE675000A595C2 /* DWProfileViewController.m in Sources */,
+				4DB62B1619AE657F00A595C2 /* DWTableViewCell.m in Sources */,
+				4DAB86DA19A7ADB200388180 /* DWAppDelegate.m in Sources */,
+				4DB62B1319AD3F4700A595C2 /* DWProtoViewController.m in Sources */,
+				4DB62B0119ABDCD700A595C2 /* DWUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DAB86E319A7ADB200388180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAB86F519A7ADB200388180 /* iDogWalkerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DAB86ED19A7ADB200388180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DAB86C519A7ADB200388180 /* iDogWalker */;
+			targetProxy = 4DAB86EC19A7ADB200388180 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DAB86D219A7ADB200388180 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DAB86D319A7ADB200388180 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4DAB86DB19A7ADB200388180 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DAB86DC19A7ADB200388180 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DAB86F119A7ADB200388180 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DAB86F219A7ADB200388180 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DAB86F619A7ADB200388180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4DAB86F719A7ADB200388180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DAB86F919A7ADB200388180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iDogWalker",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDogWalker/iDogWalker-Prefix.pch";
+				INFOPLIST_FILE = "iDogWalker/iDogWalker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4DAB86FA19A7ADB200388180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iDogWalker",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDogWalker/iDogWalker-Prefix.pch";
+				INFOPLIST_FILE = "iDogWalker/iDogWalker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4DAB86FC19A7ADB200388180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iDogWalker.app/iDogWalker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDogWalker/iDogWalker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iDogWalkerTests/iDogWalkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4DAB86FD19A7ADB200388180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iDogWalker.app/iDogWalker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDogWalker/iDogWalker-Prefix.pch";
+				INFOPLIST_FILE = "iDogWalkerTests/iDogWalkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DAB86C119A7ADB200388180 /* Build configuration list for PBXProject "iDogWalker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAB86F619A7ADB200388180 /* Debug */,
+				4DAB86F719A7ADB200388180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DAB86F819A7ADB200388180 /* Build configuration list for PBXNativeTarget "iDogWalker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAB86F919A7ADB200388180 /* Debug */,
+				4DAB86FA19A7ADB200388180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DAB86FB19A7ADB200388180 /* Build configuration list for PBXNativeTarget "iDogWalkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAB86FC19A7ADB200388180 /* Debug */,
+				4DAB86FD19A7ADB200388180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DAB86BE19A7ADB200388180 /* Project object */;
+}
