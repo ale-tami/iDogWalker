@@ -8,6 +8,10 @@
 
 #import "DWProfileViewController.h"
 #import "DWUserOperations.h"
+#import "DWDogOperations.h"
+#import "DWTableViewCell.h"
+#import <QuartzCore/QuartzCore.h>
+#import "DWDog.h"
 
 @interface DWProfileViewController () <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -20,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) UIImagePickerController *imagePicker;
+@property NSArray* dogs;
 
 
 @end
@@ -50,16 +55,33 @@
     self.imagePicker.delegate = self;
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
+    [DWUserOperations sharedInstance].delegate = self;
+    [DWDogOperations sharedInstance].delegate = self;
+    
+    [self startBlockeage];
+    [[DWDogOperations sharedInstance] getDogs:self.sentUser];
+    
+    self.dogs = [NSArray array];
+    
+    
 }
 
-- (void) operationComplete:(NSObject *) objects withError:(NSError*) error;
+- (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
-   [super operationComplete:objects withError:error];
+    [super operationCompleteFromOperation:operation withObjects:objects withError:error];
     if (!error){
-        [self performSegueWithIdentifier:@"unwindedSegue" sender:self];
+        if (objects == nil && [operation isKindOfClass:[DWUserOperations class]]) {
+            [self performSegueWithIdentifier:@"unwindedSegue" sender:self];
+        } else if (objects != nil && [operation isKindOfClass:[DWDogOperations class]]) {
+            self.dogs = (NSArray*)objects;
+            [self.tableView reloadData];
+        }
+        
+
     }
 }
 
+#pragma mark -- IBActions
 
 - (IBAction)onDone:(UIBarButtonItem *)sender
 {
@@ -71,9 +93,9 @@
     NSData *imageData = UIImagePNGRepresentation(self.profileImage.image);
     PFFile *imageFile = [PFFile fileWithData:imageData];
     [DWUser currentUser].profileImage = imageFile;
-
-    [DWUserOperations getInstance].delegate = self;
-    [[DWUserOperations getInstance] saveCurrentUserModifications];
+    
+    [self startBlockeage];
+    [[DWUserOperations sharedInstance] saveCurrentUserModifications];
 
 }
 
@@ -97,16 +119,67 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark -- TableView Delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        [self performSegueWithIdentifier:@"toAddDog" sender:self];
+    }
+}
+
 #pragma mark -- TableView DataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return self.dogs.count + 1;
+
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //Jeeeeesus man, so many numbers thrown everywhere, define a constant
+    if (indexPath.row == 0) {
+       return 40;
+    } else {
+       return 94;
+    }
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    DWTableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:@"cell"];;
+    
+    if (indexPath.row == 0) {
+
+        cell.textLabel.text = @"Add a doggie!";
+        cell.textLabel.textColor = [UIColor blueColor];
+        cell.name.hidden = YES;
+        cell.age.hidden = YES;
+        cell.race.hidden = YES;
+        cell.imageView.image = [UIImage imageNamed:@"plus"];
+        cell.image.hidden = YES;
+       
+    } else if (self.dogs.count > 0) {
+        
+        DWDog * dog = [self.dogs objectAtIndex:indexPath.row-1];
+        cell.name.text = dog.name;
+        cell.race.text = dog.race;
+        cell.age.text = [dog.age stringValue];
+        cell.image.layer.cornerRadius = 20;
+        cell.image.layer.masksToBounds = YES;
+        cell.image.image = [UIImage imageWithData:dog.imageFile.getData];
+        
+    }
+
+    
+    return cell;
+}
+
+#pragma mark -- Navigation
+
+- (IBAction)unwindSegue:(UIStoryboardSegue*)sender
+{
 }
 
 @end

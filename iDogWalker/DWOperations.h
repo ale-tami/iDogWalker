@@ -8,16 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol DWOperationsProtocol <NSObject>
+
++ (instancetype) sharedInstance;
+
+@end
+
 @protocol DWOperationsDelegate <NSObject>
 
-- (void) operationComplete:(NSObject *) objects withError:(NSError*) error;
-
+- (void) operationCompleteFromOperation:(NSObject *) operation withObjects:(NSObject *) objects withError:(NSError*) error;
 
 @end
 
 @interface DWOperations : NSObject
 
-+ (instancetype) getInstance;
++ (instancetype) sharedInstance;
 
 @property id <DWOperationsDelegate> delegate;
 

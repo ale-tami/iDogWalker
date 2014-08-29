@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DAAFB4A19AF7AC600D1EAE5 /* DWDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAAFB4919AF7AC600D1EAE5 /* DWDog.m */; };
+		4DAAFB4D19AF83DD00D1EAE5 /* DWDogOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAAFB4C19AF83DD00D1EAE5 /* DWDogOperations.m */; };
+		4DAAFB5219AFD3C300D1EAE5 /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4DAAFB5119AFD3C300D1EAE5 /* default.gpx */; };
+		4DAAFB5519B0B4FA00D1EAE5 /* DWAddDoggieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAAFB5419B0B4FA00D1EAE5 /* DWAddDoggieViewController.m */; };
 		4DAB86CA19A7ADB200388180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86C919A7ADB200388180 /* Foundation.framework */; };
 		4DAB86CC19A7ADB200388180 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86CB19A7ADB200388180 /* CoreGraphics.framework */; };
 		4DAB86CE19A7ADB200388180 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB86CD19A7ADB200388180 /* UIKit.framework */; };
@@ -57,6 +61,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DAAFB4819AF7AC600D1EAE5 /* DWDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWDog.h; sourceTree = "<group>"; };
+		4DAAFB4919AF7AC600D1EAE5 /* DWDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWDog.m; sourceTree = "<group>"; };
+		4DAAFB4B19AF83DD00D1EAE5 /* DWDogOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWDogOperations.h; sourceTree = "<group>"; };
+		4DAAFB4C19AF83DD00D1EAE5 /* DWDogOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWDogOperations.m; sourceTree = "<group>"; };
+		4DAAFB5119AFD3C300D1EAE5 /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = default.gpx; path = ../default.gpx; sourceTree = "<group>"; };
+		4DAAFB5319B0B4FA00D1EAE5 /* DWAddDoggieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWAddDoggieViewController.h; sourceTree = "<group>"; };
+		4DAAFB5419B0B4FA00D1EAE5 /* DWAddDoggieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWAddDoggieViewController.m; sourceTree = "<group>"; };
 		4DAB86C619A7ADB200388180 /* iDogWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDogWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAB86C919A7ADB200388180 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DAB86CB19A7ADB200388180 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -207,6 +218,8 @@
 				4DB62B0B19ACE31800A595C2 /* DWMapViewController.m */,
 				4DB62B1819AE675000A595C2 /* DWProfileViewController.h */,
 				4DB62B1919AE675000A595C2 /* DWProfileViewController.m */,
+				4DAAFB5319B0B4FA00D1EAE5 /* DWAddDoggieViewController.h */,
+				4DAAFB5419B0B4FA00D1EAE5 /* DWAddDoggieViewController.m */,
 				4DAB86E119A7ADB200388180 /* Images.xcassets */,
 				4DAB86D019A7ADB200388180 /* Supporting Files */,
 			);
@@ -216,6 +229,7 @@
 		4DAB86D019A7ADB200388180 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4DAAFB5119AFD3C300D1EAE5 /* default.gpx */,
 				4DAB871619A7B90700388180 /* FacebookSDK.framework */,
 				4DAB86FE19A7B0CC00388180 /* Parse.framework */,
 				4DAB86D119A7ADB200388180 /* iDogWalker-Info.plist */,
@@ -251,6 +265,8 @@
 				4DB62B0319ACC39200A595C2 /* DWUserOperations.m */,
 				4DB62B0519ACC45700A595C2 /* DWOperations.h */,
 				4DB62B0619ACC45700A595C2 /* DWOperations.m */,
+				4DAAFB4B19AF83DD00D1EAE5 /* DWDogOperations.h */,
+				4DAAFB4C19AF83DD00D1EAE5 /* DWDogOperations.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -262,6 +278,8 @@
 				4DB62B0019ABDCD700A595C2 /* DWUser.m */,
 				4DB62B0E19AD1EAD00A595C2 /* DWCheckIn.h */,
 				4DB62B0F19AD1EAD00A595C2 /* DWCheckIn.m */,
+				4DAAFB4819AF7AC600D1EAE5 /* DWDog.h */,
+				4DAAFB4919AF7AC600D1EAE5 /* DWDog.m */,
 			);
 			name = ParseObjects;
 			sourceTree = "<group>";
@@ -355,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DAB86E219A7ADB200388180 /* Images.xcassets in Resources */,
+				4DAAFB5219AFD3C300D1EAE5 /* default.gpx in Resources */,
 				4DAB86D419A7ADB200388180 /* InfoPlist.strings in Resources */,
 				4DAB86DD19A7ADB200388180 /* Main.storyboard in Resources */,
 			);
@@ -382,9 +401,12 @@
 				4DAB86E019A7ADB200388180 /* DWViewController.m in Sources */,
 				4DB62B0719ACC45700A595C2 /* DWOperations.m in Sources */,
 				4DB62AFD19ABD71D00A595C2 /* DWRegistrationViewController.m in Sources */,
+				4DAAFB4A19AF7AC600D1EAE5 /* DWDog.m in Sources */,
 				4DB62B1A19AE675000A595C2 /* DWProfileViewController.m in Sources */,
 				4DB62B1619AE657F00A595C2 /* DWTableViewCell.m in Sources */,
+				4DAAFB5519B0B4FA00D1EAE5 /* DWAddDoggieViewController.m in Sources */,
 				4DAB86DA19A7ADB200388180 /* DWAppDelegate.m in Sources */,
+				4DAAFB4D19AF83DD00D1EAE5 /* DWDogOperations.m in Sources */,
 				4DB62B1319AD3F4700A595C2 /* DWProtoViewController.m in Sources */,
 				4DB62B0119ABDCD700A595C2 /* DWUser.m in Sources */,
 			);

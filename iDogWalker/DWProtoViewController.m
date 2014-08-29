@@ -20,33 +20,41 @@ UIActivityIndicatorView *spinner = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void) startBlockeage
 {
-    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+//    if (![[UIApplication sharedApplication] isIgnoringInteractionEvents])
+//    {
+//        [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+//    }
     
     spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     spinner.center = self.view.center;
+    spinner.hidesWhenStopped = YES;
     [self.view addSubview:spinner];
     [spinner startAnimating];
+    NSLog(@"Blocking");
     
 }
 
 - (void) stopBlockeage
 {
-    if ([[UIApplication sharedApplication] isIgnoringInteractionEvents])
-    {
-        [[UIApplication sharedApplication] endIgnoringInteractionEvents];
-    }
+//    if ([[UIApplication sharedApplication] isIgnoringInteractionEvents])
+//    {
+//        [[UIApplication sharedApplication] endIgnoringInteractionEvents];
+//    }
+    [spinner stopAnimating];
+    [spinner removeFromSuperview];
+    spinner = nil;
+    NSLog(@"Unblocking");
 }
 
 #pragma mark -- Operation delegate
 
-- (void) operationComplete:(NSObject *) objects withError:(NSError*) error;
+- (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
-    [spinner removeFromSuperview];
     [self stopBlockeage];
     
     if (error) {
@@ -57,6 +65,7 @@ UIActivityIndicatorView *spinner = nil;
                                               otherButtonTitles:nil];
         [alert show];
     }
+    NSLog(@"super operaiont");
 }
 
 @end

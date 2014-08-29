@@ -14,17 +14,21 @@
 static DWOperations *operations = nil;
 
 
-+ (instancetype) getInstance
++ (instancetype) sharedInstance
 {
     if (operations) {
         return operations;
     } else {
         
+        
+//        operations = [NSClassFromString([[self class] description]) new];
+//        return operations;
+        
         return operations = [[self class] new];
     }
 }
 
-- (void) operationComplete:(NSObject *) objects withError:(NSError*) error;
+- (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
     
 }

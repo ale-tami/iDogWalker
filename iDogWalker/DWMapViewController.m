@@ -32,6 +32,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 - (void)setUser:(DWUser *)user {
     objc_setAssociatedObject(self, UserPropertyKey, user, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
 @end
 #pragma mark -- END -- category for MKPointAnnotation
 
@@ -49,16 +50,15 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 - (void) annotatePeople
 {
-    DWUserOperations *userOps = [DWUserOperations new];
-    userOps.delegate = self;
- 
-    [userOps getNerbyWalkers:self.mapView.userLocation.coordinate];
+    [self startBlockeage];
+
+    [[DWUserOperations sharedInstance] getNerbyWalkers:self.mapView.userLocation.coordinate];
 }
 
 
-- (void) operationComplete:(NSObject *) objects withError:(NSError*) error;
+- (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
-    [super operationComplete:objects withError:error];
+    [super operationCompleteFromOperation:operation withObjects:objects withError:error];
     if ([objects isKindOfClass:[NSArray class]] && !error) {
         
         for (DWCheckIn *checkIn in ((NSArray*)objects))
@@ -72,6 +72,8 @@ static void * UserPropertyKey = &UserPropertyKey;
         }
 
     }
+    
+    NSLog(@"Operation");
 }
 
 #pragma mark -- View management
@@ -86,10 +88,10 @@ static void * UserPropertyKey = &UserPropertyKey;
 {
     [super viewDidLoad];
     
+    [DWUserOperations sharedInstance].delegate = self;
+    
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
-    
-    [self annotatePeople];
     
 }
 
@@ -104,11 +106,9 @@ static void * UserPropertyKey = &UserPropertyKey;
 #pragma mark -- IBActions
 - (IBAction)onCheckIn:(UIBarButtonItem *)sender
 {
-    [self startBlockeage];
-
-    DWUserOperations *userOps = [DWUserOperations new];
-    userOps.delegate = self;
-    [userOps checkInCurrentUser:self.mapView.userLocation.coordinate];
+    
+    [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
+    [self annotatePeople];
 }
 
 - (IBAction)onRefresh:(UIBarButtonItem *)sender
@@ -169,6 +169,13 @@ static void * UserPropertyKey = &UserPropertyKey;
     [self performSegueWithIdentifier:@"toProfile" sender:view];
         
 }
+
+-(void) mapViewDidFinishLoadingMap:(MKMapView *)mapView
+{
+    [self annotatePeople];
+    NSLog(@"Map");
+}
+
 
 #pragma mark - Navigation
 

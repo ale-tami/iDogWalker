@@ -11,6 +11,17 @@
 
 @implementation DWUserOperations
 
+static DWUserOperations *operations = nil;
+
++ (instancetype) sharedInstance
+{
+    if (operations) {
+        return operations;
+    } else {
+        
+        return operations = [DWUserOperations new];
+    }
+}
 
 - (void) saveUser:(NSString*)userName eMail: (NSString*)email password:(NSString*) password profileImage:(UIImage*) image
 {
@@ -24,7 +35,7 @@
     user.profileImage = imageFile;
     
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        [self.delegate operationComplete:nil withError: error];
+        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
     }];
 }
 
@@ -42,7 +53,7 @@
         checkIn.user = [DWUser currentUser];
         
         [checkIn saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            [self.delegate operationComplete:nil withError: error];
+            [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
             
         }];
     }];
@@ -61,7 +72,8 @@
                         withinKilometers:1.0f];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
-        [self.delegate operationComplete:objects withError: error];
+        [self.delegate operationCompleteFromOperation:self withObjects:objects withError: error];
+        NSLog(@"got nerby ");
     }];
     
 }
@@ -69,7 +81,7 @@
 - (void) saveCurrentUserModifications
 {
     [[DWUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        [self.delegate operationComplete:nil withError:error];
+        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
     }];
 }
 
