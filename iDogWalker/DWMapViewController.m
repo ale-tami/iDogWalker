@@ -37,22 +37,84 @@ static void * UserPropertyKey = &UserPropertyKey;
 #pragma mark -- END -- category for MKPointAnnotation
 
 
-
-
 @interface DWMapViewController () <MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *checkInButton;
+
+@property BOOL isCheckedIn;
+@property NSUserDefaults *uDefaults;
+@property NSString *stringForButton;
 
 @end
 
 @implementation DWMapViewController
 
 
+#pragma mark -- View management
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    
+    self.uDefaults = [NSUserDefaults standardUserDefaults];
+    self.isCheckedIn = [self.uDefaults boolForKey:@"isCheckedIn"];
+    if (self.isCheckedIn) {
+        self.checkInButton.title = @"Check-Out";
+    }
+    
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [DWUserOperations sharedInstance].delegate = self;
+    
+    self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
+//    self.navigationItem.hidesBackButton = YES;
+    
+
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+    //    self.navigationItem.hidesBackButton = NO;
+}
+
+#pragma mark -- other convenient methods
+
+- (void) imageForPin: (MKPinAnnotationView*) pin andUser:(DWUser *) user
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
+        CGSize size = pin.frame.size;
+        
+        NSData *dataForImage = user.profileImage.getData;
+        
+        pin.image = [UIImage imageWithData:dataForImage];
+        
+        if (!dataForImage) {
+            pin.image = [UIImage imageNamed:@"placeholder"];
+        }
+        
+        pin.contentMode = UIViewContentModeScaleAspectFit;
+        pin.frame = CGRectMake(pin.frame.origin.x,
+                               pin.frame.origin.y,
+                               size.width,
+                               size.width);
+        
+    });
+}
+
 - (void) annotatePeople
 {
-    [self startBlockeage];
+    if (self.isCheckedIn) {
+        [self startBlockeage];
 
-    [[DWUserOperations sharedInstance] getNerbyWalkers:self.mapView.userLocation.coordinate];
+        [[DWUserOperations sharedInstance] getNerbyWalkers:self.mapView.userLocation.coordinate];
+    }
 }
 
 
@@ -60,6 +122,8 @@ static void * UserPropertyKey = &UserPropertyKey;
 {
     [super operationCompleteFromOperation:operation withObjects:objects withError:error];
     if ([objects isKindOfClass:[NSArray class]] && !error) {
+        
+        [self.mapView removeAnnotations:self.mapView.annotations];
         
         for (DWCheckIn *checkIn in ((NSArray*)objects))
         {
@@ -73,41 +137,28 @@ static void * UserPropertyKey = &UserPropertyKey;
 
     }
     
-    NSLog(@"Operation");
+  //  NSLog(@"Operation");
 }
-
-#pragma mark -- View management
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:YES];
-    self.navigationItem.hidesBackButton = YES;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    [DWUserOperations sharedInstance].delegate = self;
-    
-    self.mapView.delegate = self;
-    self.mapView.showsUserLocation = YES;
-    
-}
-
-- (void) viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:YES];
-    self.navigationItem.hidesBackButton = NO;
-}
-
 
 
 #pragma mark -- IBActions
 - (IBAction)onCheckIn:(UIBarButtonItem *)sender
 {
+    if (!self.isCheckedIn) {
+        [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
+        sender.title = @"Check-Out";
+        self.isCheckedIn = YES;
+    } else {
+        [[DWUserOperations sharedInstance] checkOutCurrentUser];
+        sender.title = @"Check-In!";
+        self.isCheckedIn = NO;
+        [self.mapView removeAnnotations:self.mapView.annotations];
+
+    }
     
-    [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
+    [self.uDefaults setBool:self.isCheckedIn forKey:@"isCheckedIn"];
+    [self.uDefaults synchronize];
+    
     [self annotatePeople];
 }
 
@@ -121,17 +172,12 @@ static void * UserPropertyKey = &UserPropertyKey;
     [self performSegueWithIdentifier:@"toProfile" sender:nil];
 }
 
-
-
 #pragma mark -- MapView Delegates
 
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
     MKPinAnnotationView *pin = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"annotation"];
     pin.canShowCallout = YES;
-   
-    
-    CGSize size = pin.frame.size;
     
     if (annotation == mapView.userLocation) {
         MKCoordinateSpan coordinateSpan;
@@ -144,23 +190,15 @@ static void * UserPropertyKey = &UserPropertyKey;
         [self.mapView setRegion:region animated:YES];
         
         ((MKPointAnnotation*)pin.annotation).title = @"YOU!";
-        pin.image = [UIImage imageWithData:[DWUser currentUser].profileImage.getData];
+        
+        [self imageForPin:pin andUser:[DWUser currentUser]];
+        
     } else {
         pin.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeInfoLight];
-        pin.image = [UIImage imageWithData: ((MKPointAnnotation *)annotation).user.profileImage.getData];
-        if (!pin.image) {
-            pin.image = [UIImage imageNamed:@"placeholder"];
-        }
-        
-    }
-    
-    pin.contentMode = UIViewContentModeScaleAspectFit;
-    pin.frame = CGRectMake(pin.frame.origin.x,
-                           pin.frame.origin.y,
-                           size.width,
-                           size.width);
+        [self imageForPin:pin andUser:((MKPointAnnotation *)annotation).user];
 
-    
+    }
+   
     return pin;
 }
 
@@ -173,7 +211,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 -(void) mapViewDidFinishLoadingMap:(MKMapView *)mapView
 {
     [self annotatePeople];
-    NSLog(@"Map");
+   // NSLog(@"Map");
 }
 
 

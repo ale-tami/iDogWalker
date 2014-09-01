@@ -17,6 +17,7 @@
 
 - (void) saveUser:(NSString*)userName eMail: (NSString*)email password:(NSString*) password profileImage:(UIImage*) image;
 - (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates;
+- (void) checkOutCurrentUser;
 - (void) getNerbyWalkers:(CLLocationCoordinate2D) coordinate;
 - (void) saveCurrentUserModifications;
 

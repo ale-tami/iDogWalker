@@ -64,7 +64,7 @@
                         <outlet property="passwordField" destination="PZD-if-Qs0" id="9i3-hJ-vRT"/>
                         <outlet property="profileImageView" destination="cWf-e1-Fl0" id="q7i-rk-2SF"/>
                         <outlet property="userNameField" destination="UtT-8g-5TY" id="bef-9b-Jen"/>
-                        <segue destination="Li3-0Y-65W" kind="push" identifier="toAppFromRegistration" id="HHM-MD-obV"/>
+                        <segue destination="2wv-z0-pZL" kind="push" identifier="toAppFromRegistration" id="HHM-MD-obV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktv-2d-Eh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,7 +137,7 @@
                     <connections>
                         <outlet property="emailField" destination="9xG-PM-Lwq" id="ywp-gl-usm"/>
                         <outlet property="passwordField" destination="7dS-h4-mrl" id="SWF-gn-fiv"/>
-                        <segue destination="Li3-0Y-65W" kind="push" identifier="toApp" id="e21-4f-aX3"/>
+                        <segue destination="Li3-0Y-65W" kind="push" identifier="toApp" id="bVD-Gj-YGz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -188,6 +188,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="checkInButton" destination="sVr-Ys-XES" id="ejL-Ql-6qv"/>
                         <outlet property="mapView" destination="o6n-Nl-Ksl" id="t6a-vB-dFc"/>
                         <segue destination="P7u-ZK-eZr" kind="push" identifier="toProfile" id="4DC-hw-ih6"/>
                     </connections>
@@ -195,7 +196,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuf-O8-fHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="eNI-NL-ABO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1600" y="-833"/>
+            <point key="canvasLocation" x="2126" y="-833"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="2d8-Ca-VZX">
@@ -318,7 +319,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="A17-fT-ryf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="xFi-mA-lCm">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="OXk-b3-xQE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="xFi-mA-lCm">
                             <connections>
                                 <action selector="onDone:" destination="P7u-ZK-eZr" id="kjz-V5-M8h"/>
                             </connections>
@@ -344,7 +346,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2069" y="-833"/>
+            <point key="canvasLocation" x="2575" y="-833"/>
         </scene>
         <!--Add Doggie View Controller-->
         <scene sceneID="9kv-MC-8BX">
@@ -358,10 +360,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="behind_alert_view" translatesAutoresizingMaskIntoConstraints="NO" id="aMn-We-NKO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-Hf-Mn1">
-                                <rect key="frame" x="20" y="54" width="280" height="293"/>
+                                <rect key="frame" x="20" y="54" width="280" height="302"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="cFA-dR-X6H">
+                                        <rect key="frame" x="20" y="11" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-hs-zLr">
                                         <rect key="frame" x="20" y="147" width="240" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -418,12 +429,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="cFA-dR-X6H">
-                                <rect key="frame" x="30" y="64" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="age" destination="olW-Ur-UlI" id="VFm-Eb-ymU"/>
@@ -435,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rj-24-Osg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448" y="-833"/>
+            <point key="canvasLocation" x="2974" y="-833"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rkD-09-fmt">
@@ -459,8 +465,28 @@
             </objects>
             <point key="canvasLocation" x="590" y="-580"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J2i-7u-tqH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2wv-z0-pZL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="QGr-6W-8gq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="04S-SK-l89">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Li3-0Y-65W" kind="relationship" relationship="rootViewController" id="9yS-ii-GFk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAD-In-gfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600" y="-833"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="behind_alert_view" width="160" height="230"/>
         <image name="facebook_login" width="149" height="28"/>
         <image name="placeholder" width="100" height="100"/>
         <image name="profile" width="25" height="25"/>
@@ -472,6 +498,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HHM-MD-obV"/>
+        <segue reference="bVD-Gj-YGz"/>
     </inferredMetricsTieBreakers>
 </document>

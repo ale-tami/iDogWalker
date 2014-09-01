@@ -31,6 +31,8 @@
     self.imagePicker = [UIImagePickerController new];
     self.imagePicker.delegate = self;
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+  
 }
 
 

@@ -23,6 +23,8 @@ static DWUserOperations *operations = nil;
     }
 }
 
+
+
 - (void) saveUser:(NSString*)userName eMail: (NSString*)email password:(NSString*) password profileImage:(UIImage*) image
 {
     DWUser *user = [DWUser user];
@@ -41,6 +43,27 @@ static DWUserOperations *operations = nil;
 
 - (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates
 {
+//    
+//    PFQuery *query = [PFQuery queryWithClassName:[DWCheckIn parseClassName]];
+//    
+//    [query whereKey:@"user" equalTo:[DWUser currentUser]];
+//    
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//    
+//        DWCheckIn *checkIn = [objects firstObject];
+    DWCheckIn *checkIn = [DWCheckIn object];
+    checkIn.location = [PFGeoPoint geoPointWithLatitude:coordinates.latitude longitude:coordinates.longitude];
+    checkIn.user = [DWUser currentUser];
+    
+    [checkIn saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+        
+    }];
+//    }];
+}
+
+- (void) checkOutCurrentUser
+{
     
     PFQuery *query = [PFQuery queryWithClassName:[DWCheckIn parseClassName]];
     
@@ -49,15 +72,14 @@ static DWUserOperations *operations = nil;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         DWCheckIn *checkIn = [objects firstObject];
-        checkIn.location = [PFGeoPoint geoPointWithLatitude:coordinates.latitude longitude:coordinates.longitude];
-        checkIn.user = [DWUser currentUser];
         
-        [checkIn saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [checkIn deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
             
         }];
     }];
 }
+
 
 - (void) getNerbyWalkers:(CLLocationCoordinate2D) coordinate
 {
@@ -73,7 +95,6 @@ static DWUserOperations *operations = nil;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         [self.delegate operationCompleteFromOperation:self withObjects:objects withError: error];
-        NSLog(@"got nerby ");
     }];
     
 }

@@ -33,9 +33,13 @@ UIActivityIndicatorView *spinner = nil;
     spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     spinner.center = self.view.center;
     spinner.hidesWhenStopped = YES;
+    spinner.color = [UIColor blueColor];
+    
     [self.view addSubview:spinner];
+    
     [spinner startAnimating];
-    NSLog(@"Blocking");
+//     NSLog(@"On Block spinner: %@", spinner);
+//     NSLog(@"On BLOCK thread: %@", [NSThread currentThread]);
     
 }
 
@@ -47,8 +51,15 @@ UIActivityIndicatorView *spinner = nil;
 //    }
     [spinner stopAnimating];
     [spinner removeFromSuperview];
-    spinner = nil;
-    NSLog(@"Unblocking");
+    
+    for (UIActivityIndicatorView *spiner in [self.view subviews])
+    {
+        if ([spiner isKindOfClass:[UIActivityIndicatorView class]])
+            [spiner removeFromSuperview];
+    }
+   
+//    NSLog(@"On Unblock spinner: %@", spinner);
+//    NSLog(@"On Unblock thread: %@", [NSThread currentThread]);
 }
 
 #pragma mark -- Operation delegate
@@ -56,16 +67,17 @@ UIActivityIndicatorView *spinner = nil;
 - (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
     [self stopBlockeage];
+
     
     if (error) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Something went wrong"
-                                                        message:error.description
+                                                        message:[error localizedDescription]
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
         [alert show];
     }
-    NSLog(@"super operaiont");
+   // NSLog(@"super operaiont");
 }
 
 @end

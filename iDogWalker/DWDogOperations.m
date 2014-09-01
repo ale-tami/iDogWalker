@@ -35,9 +35,15 @@ static DWDogOperations *operations = nil;
     PFFile *imageFile = [PFFile fileWithData:imageData];
     doggie.imageFile = imageFile;
     
-    [doggie saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (name.length == 0) {
+        NSError *error = [NSError errorWithDomain:@"Name cannot be empty" code:1 userInfo:nil];
         [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
-    }];
+    } else {
+    
+        [doggie saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+        }];
+    }
 }
 
 - (void) getDogs:(DWUser*) owner

@@ -12,6 +12,7 @@
 #import "DWTableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 #import "DWDog.h"
+#import "DWAddDoggieViewController.h"
 
 @interface DWProfileViewController () <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -43,13 +44,14 @@
     } else {
         self.userName.userInteractionEnabled = NO;
         self.eMail.userInteractionEnabled = NO;
-        self.navigationItem.rightBarButtonItem = nil;
+        self.navigationItem.rightBarButtonItem.enabled = NO;
+        [self.navigationItem.rightBarButtonItem setTintColor:[UIColor clearColor]];
         self.title = [NSString stringWithFormat:@"%@'s Profile", self.sentUser.username];
     }
     
-    self.profileImage.image = [UIImage imageWithData: self.sentUser.profileImage.getData];
     self.userName.text = self.sentUser.username;
     self.eMail.text = self.sentUser.email;
+    [self imageForUser];
     
     self.imagePicker = [UIImagePickerController new];
     self.imagePicker.delegate = self;
@@ -58,13 +60,35 @@
     [DWUserOperations sharedInstance].delegate = self;
     [DWDogOperations sharedInstance].delegate = self;
     
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     [self startBlockeage];
     [[DWDogOperations sharedInstance] getDogs:self.sentUser];
     
     self.dogs = [NSArray array];
     
+    [self.tableView reloadData];
     
 }
+
+- (void) imageForUser
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
+
+        self.profileImage.image = [UIImage imageWithData: self.sentUser.profileImage.getData];
+
+        
+        if (!self.profileImage.image) {
+            self.profileImage.image = [UIImage imageNamed:@"placeholder"];
+        }
+        
+    });
+}
+
 
 - (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
@@ -124,6 +148,7 @@
 {
     if (indexPath.row == 0) {
         [self performSegueWithIdentifier:@"toAddDog" sender:self];
+
     }
 }
 
@@ -150,8 +175,8 @@
 {
     DWTableViewCell *cell =  [tableView dequeueReusableCellWithIdentifier:@"cell"];;
     
-    if (indexPath.row == 0) {
-
+    if (indexPath.row == 0 && (self.sentUser == [DWUser currentUser])) {
+        
         cell.textLabel.text = @"Add a doggie!";
         cell.textLabel.textColor = [UIColor blueColor];
         cell.name.hidden = YES;
@@ -169,6 +194,15 @@
         cell.image.layer.cornerRadius = 20;
         cell.image.layer.masksToBounds = YES;
         cell.image.image = [UIImage imageWithData:dog.imageFile.getData];
+        
+    } else {
+        
+        cell.textLabel.text = @"No doggies";
+        cell.textLabel.textColor = [UIColor blueColor];
+        cell.name.hidden = YES;
+        cell.age.hidden = YES;
+        cell.race.hidden = YES;
+        cell.image.hidden = YES;
         
     }
 
