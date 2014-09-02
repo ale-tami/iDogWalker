@@ -14,7 +14,7 @@
 #import "DWDog.h"
 #import "DWAddDoggieViewController.h"
 
-@interface DWProfileViewController () <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface DWProfileViewController () <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -161,6 +161,52 @@
     
     [[DWDogOperations sharedInstance] saveDoggieModifications:cell.doggie];
     
+}
+
+- (IBAction)onChangePassword:(UIButton *)sender
+{
+    if (self.sentUser == [DWUser currentUser]) {
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Change password"
+                                                          message:nil
+                                                         delegate:self
+                                                cancelButtonTitle:@"Cancel"
+                                                otherButtonTitles:@"Continue", nil];
+        alertView.delegate = self;
+        
+        [alertView setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
+        
+        [alertView textFieldAtIndex:0].placeholder = @"Password";
+        [alertView textFieldAtIndex:0].secureTextEntry = YES;
+        
+        [alertView textFieldAtIndex:1].placeholder = @"Repeat Password";
+        [alertView textFieldAtIndex:1].secureTextEntry = YES;
+        
+        [alertView show];
+    }
+}
+
+- (BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView
+{
+    NSString *inputText1 = [[alertView textFieldAtIndex:0] text];
+    NSString *inputText2 = [[alertView textFieldAtIndex:1] text];
+    
+    if( [inputText1 isEqualToString:inputText2])
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [DWUser currentUser].password = [alertView textFieldAtIndex:1].text;
+        [[DWUserOperations sharedInstance] saveCurrentUserModifications];
+    }
 }
 
 #pragma mark -- UIImagePickerController Delegates

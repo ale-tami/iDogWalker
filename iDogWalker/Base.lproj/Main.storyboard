@@ -244,7 +244,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="tbG-wO-79O" kind="modal" identifier="toChangePassword" id="NIQ-3s-k3r"/>
+                                    <action selector="onChangePassword:" destination="P7u-ZK-eZr" eventType="touchUpInside" id="IQ5-sa-gJJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="has x friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZr-Ie-z0w">
@@ -359,38 +359,6 @@
             </objects>
             <point key="canvasLocation" x="2575" y="-833"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xAe-8F-8zf">
-            <objects>
-                <viewController id="tbG-wO-79O" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ffl-2N-HwJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="p53-df-T4m"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xhw-6X-6oL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VoL-wx-VOt">
-                                <rect key="frame" x="20" y="250" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat New Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afU-ln-KbK">
-                                <rect key="frame" x="20" y="288" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1lY-MX-yX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3037" y="-444"/>
-        </scene>
         <!--Add Doggie View Controller-->
         <scene sceneID="9kv-MC-8BX">
             <objects>
@@ -484,7 +452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rj-24-Osg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3043" y="-1109"/>
+            <point key="canvasLocation" x="3056" y="-833"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rkD-09-fmt">
