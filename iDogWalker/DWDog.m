@@ -15,6 +15,7 @@
 @dynamic name;
 @dynamic age;
 @dynamic race;
+@dynamic isNeedingPartner;
 
 + (void) load
 {

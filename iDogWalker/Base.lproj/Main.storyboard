@@ -243,6 +243,9 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="tbG-wO-79O" kind="modal" identifier="toChangePassword" id="NIQ-3s-k3r"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="has x friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZr-Ie-z0w">
                                 <rect key="frame" x="20" y="175" width="280" height="21"/>
@@ -278,33 +281,41 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oNx-Y3-R84">
-                                                    <rect key="frame" x="185" y="9" width="75" height="75"/>
+                                                    <rect key="frame" x="203" y="9" width="75" height="75"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN9-vR-n9z">
-                                                    <rect key="frame" x="20" y="9" width="157" height="21"/>
+                                                    <rect key="frame" x="3" y="9" width="157" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEf-3Q-r9M">
-                                                    <rect key="frame" x="20" y="36" width="157" height="21"/>
+                                                    <rect key="frame" x="3" y="36" width="157" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMc-Bl-Cw5">
-                                                    <rect key="frame" x="20" y="63" width="157" height="21"/>
+                                                    <rect key="frame" x="3" y="63" width="157" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcQ-LR-BUE">
+                                                    <rect key="frame" x="160" y="28" width="37" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="heart">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="age" destination="YEf-3Q-r9M" id="HZT-LC-xoY"/>
                                             <outlet property="image" destination="oNx-Y3-R84" id="fF0-DO-bCZ"/>
+                                            <outlet property="loveButton" destination="QcQ-LR-BUE" id="m0W-Yi-f8z"/>
                                             <outlet property="name" destination="IN9-vR-n9z" id="R9c-rV-3bg"/>
                                             <outlet property="race" destination="pMc-Bl-Cw5" id="0jV-bz-N5S"/>
                                         </connections>
@@ -347,6 +358,38 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2575" y="-833"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xAe-8F-8zf">
+            <objects>
+                <viewController id="tbG-wO-79O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ffl-2N-HwJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="p53-df-T4m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xhw-6X-6oL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VoL-wx-VOt">
+                                <rect key="frame" x="20" y="250" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat New Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afU-ln-KbK">
+                                <rect key="frame" x="20" y="288" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lY-MX-yX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3037" y="-444"/>
         </scene>
         <!--Add Doggie View Controller-->
         <scene sceneID="9kv-MC-8BX">
@@ -441,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rj-24-Osg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2974" y="-833"/>
+            <point key="canvasLocation" x="3043" y="-1109"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rkD-09-fmt">
@@ -488,6 +531,7 @@
     <resources>
         <image name="behind_alert_view" width="160" height="230"/>
         <image name="facebook_login" width="149" height="28"/>
+        <image name="heart" width="37" height="37"/>
         <image name="placeholder" width="100" height="100"/>
         <image name="profile" width="25" height="25"/>
         <image name="twitter_login" width="149" height="28"/>

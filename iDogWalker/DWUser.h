@@ -12,6 +12,7 @@
 @interface DWUser : PFUser <PFSubclassing>
 
 @property PFFile *profileImage;
+@property NSArray* doggies;
 
 + (DWUser *)user;
 //+ (NSString*) parseClassName;

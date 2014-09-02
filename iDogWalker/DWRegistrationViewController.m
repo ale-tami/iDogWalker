@@ -44,7 +44,7 @@
 - (IBAction)onStart:(UIBarButtonItem *)sender
 {
     
-    [self startBlockeage];
+  //  [self startBlockeage];
     
     DWUserOperations *userOps = [DWUserOperations new];
     [userOps saveUser:self.userNameField.text

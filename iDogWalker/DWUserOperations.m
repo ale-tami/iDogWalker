@@ -15,6 +15,7 @@ static DWUserOperations *operations = nil;
 
 + (instancetype) sharedInstance
 {
+    
     if (operations) {
         return operations;
     } else {
@@ -27,6 +28,8 @@ static DWUserOperations *operations = nil;
 
 - (void) saveUser:(NSString*)userName eMail: (NSString*)email password:(NSString*) password profileImage:(UIImage*) image
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
     DWUser *user = [DWUser user];
     user.username = userName;
     user.password = password;
@@ -43,14 +46,8 @@ static DWUserOperations *operations = nil;
 
 - (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates
 {
-//    
-//    PFQuery *query = [PFQuery queryWithClassName:[DWCheckIn parseClassName]];
-//    
-//    [query whereKey:@"user" equalTo:[DWUser currentUser]];
-//    
-//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//    
-//        DWCheckIn *checkIn = [objects firstObject];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
     DWCheckIn *checkIn = [DWCheckIn object];
     checkIn.location = [PFGeoPoint geoPointWithLatitude:coordinates.latitude longitude:coordinates.longitude];
     checkIn.user = [DWUser currentUser];
@@ -59,12 +56,13 @@ static DWUserOperations *operations = nil;
         [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
         
     }];
-//    }];
+
 }
 
 - (void) checkOutCurrentUser
 {
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
     PFQuery *query = [PFQuery queryWithClassName:[DWCheckIn parseClassName]];
     
     [query whereKey:@"user" equalTo:[DWUser currentUser]];
@@ -83,7 +81,8 @@ static DWUserOperations *operations = nil;
 
 - (void) getNerbyWalkers:(CLLocationCoordinate2D) coordinate
 {
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
     PFQuery *query = [PFQuery queryWithClassName:[DWCheckIn parseClassName]];
     [query setLimit:100];
     [query includeKey:@"user"];
@@ -101,6 +100,8 @@ static DWUserOperations *operations = nil;
 
 - (void) saveCurrentUserModifications
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
     [[DWUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
     }];

@@ -12,6 +12,7 @@
 #import "DWCheckIn.h"
 #import <objc/runtime.h>
 #import "DWProfileViewController.h"
+#import "DWDogOperations.h"
 
 #pragma mark -- BEGINNING -- category for MKPointAnnotation
 static void * UserPropertyKey = &UserPropertyKey;
@@ -57,53 +58,82 @@ static void * UserPropertyKey = &UserPropertyKey;
 {
     [super viewWillAppear:YES];
     
+    [DWUserOperations sharedInstance].delegate = self;
+    [DWDogOperations sharedInstance].delegate = self;
+    
+    self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
+    
     self.uDefaults = [NSUserDefaults standardUserDefaults];
     self.isCheckedIn = [self.uDefaults boolForKey:@"isCheckedIn"];
     if (self.isCheckedIn) {
         self.checkInButton.title = @"Check-Out";
+        [self annotatePeople];
+
     }
-    
+    self.navigationItem.hidesBackButton = YES;
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [DWUserOperations sharedInstance].delegate = self;
-    
-    self.mapView.delegate = self;
-    self.mapView.showsUserLocation = YES;
-//    self.navigationItem.hidesBackButton = YES;
-    
 
 }
 
 - (void) viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
-    //    self.navigationItem.hidesBackButton = NO;
+    self.navigationItem.leftBarButtonItem = NO;
 }
 
 #pragma mark -- other convenient methods
 
-- (void) imageForPin: (MKPinAnnotationView*) pin andUser:(DWUser *) user
+- (void) imageForPin: (MKAnnotationView*) pin andUser:(DWUser *) user
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
         CGSize size = pin.frame.size;
         
         NSData *dataForImage = user.profileImage.getData;
         
-        pin.image = [UIImage imageWithData:dataForImage];
+        BOOL needsHeart = [[DWDogOperations sharedInstance] userHasDogsInNeed:user];
         
-        if (!dataForImage) {
-            pin.image = [UIImage imageNamed:@"placeholder"];
+        UIImageView *imageView = [UIImageView new];
+        
+
+        
+        
+        if (needsHeart) {
+         //   pin.image = [UIImage imageNamed:@"heartFilled"];
+             imageView.image = [UIImage imageNamed:@"heartFilled"];
+        }else {
+        //    pin.image = [UIImage imageWithData:dataForImage];
+            imageView.image = [UIImage imageWithData:dataForImage];
         }
         
-        pin.contentMode = UIViewContentModeScaleAspectFit;
-        pin.frame = CGRectMake(pin.frame.origin.x,
-                               pin.frame.origin.y,
-                               size.width,
-                               size.width);
+        if (!dataForImage) {
+         //   pin.image = [UIImage imageNamed:@"placeholder"];
+            imageView.image = [UIImage imageNamed:@"placeholder"];
+        }
+//        
+//        pin.contentMode = UIViewContentModeScaleAspectFit;
+//        pin.frame = CGRectMake(pin.frame.origin.x,
+//                               pin.frame.origin.y,
+//                               size.width,
+//                               size.height);
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        imageView.frame = CGRectMake(imageView.frame.origin.x,
+                                     imageView.frame.origin.y -3,
+                                     size.width,
+                                     size.height);
+        
+       // imageView.layer.borderColor = [[UIColor blueColor] CGColor];
+      //  imageView.layer.borderWidth = 0.5;
+        imageView.layer.cornerRadius = 23.0;
+        imageView.layer.masksToBounds = YES;
+        
+        pin.centerOffset = CGPointMake(-13, -23);
+        [pin addSubview:imageView];
         
     });
 }
@@ -111,7 +141,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 - (void) annotatePeople
 {
     if (self.isCheckedIn) {
-        [self startBlockeage];
+      //  [self startBlockeage];
 
         [[DWUserOperations sharedInstance] getNerbyWalkers:self.mapView.userLocation.coordinate];
     }
@@ -121,10 +151,14 @@ static void * UserPropertyKey = &UserPropertyKey;
 - (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
     [super operationCompleteFromOperation:operation withObjects:objects withError:error];
-    if ([objects isKindOfClass:[NSArray class]] && !error) {
+    
+    if (objects != nil && [operation isKindOfClass:[DWUserOperations class]]){
+
+        NSMutableArray * annotationsToRemove = [self.mapView.annotations mutableCopy];
+
+        [self.mapView removeAnnotations:annotationsToRemove];
         
-        [self.mapView removeAnnotations:self.mapView.annotations];
-        
+        self.mapView.showsUserLocation = NO;
         for (DWCheckIn *checkIn in ((NSArray*)objects))
         {
             MKPointAnnotation *annotation = [MKPointAnnotation new];
@@ -134,6 +168,7 @@ static void * UserPropertyKey = &UserPropertyKey;
             [self.mapView addAnnotation:annotation];
             
         }
+        self.mapView.showsUserLocation = YES;
 
     }
     
@@ -176,7 +211,8 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
-    MKPinAnnotationView *pin = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"annotation"];
+    MKAnnotationView *pin = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"annotation"];
+    pin.image = [UIImage imageNamed:@"imagefiles-location_map_pin_blue"];
     pin.canShowCallout = YES;
     
     if (annotation == mapView.userLocation) {

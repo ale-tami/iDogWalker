@@ -60,7 +60,7 @@
 #pragma mark -- IBActions
 - (IBAction)onDone:(UIButton *)sender
 {
-    [self startBlockeage];
+   // [self startBlockeage];
     [[DWDogOperations sharedInstance] saveDog:self.name.text
                                           age:[NSNumber numberWithInteger:[self.age.text integerValue] ]
                                          race:self.race.text

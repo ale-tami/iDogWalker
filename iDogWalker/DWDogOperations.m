@@ -15,6 +15,7 @@ static DWDogOperations *operations = nil;
 
 + (instancetype) sharedInstance
 {
+
     if (operations) {
         return operations;
     } else {
@@ -25,6 +26,8 @@ static DWDogOperations *operations = nil;
 
 - (void) saveDog:(NSString*)name age: (NSNumber*)age race:(NSString*) race profileImage:(UIImage*) image;
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
     DWDog *doggie = [DWDog new];
     doggie.name = name;
     doggie.age = age;
@@ -48,7 +51,8 @@ static DWDogOperations *operations = nil;
 
 - (void) getDogs:(DWUser*) owner
 {
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
     PFQuery *query = [PFQuery queryWithClassName:[DWDog parseClassName]];
     [query whereKey:@"user" equalTo:owner];
     
@@ -59,5 +63,36 @@ static DWDogOperations *operations = nil;
     }];
     
 }
+
+- (void) saveDoggieModifications: (DWDog *)doggie
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
+    [doggie saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+        
+    }];
+}
+
+
+/* This method does not use delegate */
+
+- (BOOL) userHasDogsInNeed: (DWUser*) owner
+{
+    PFQuery *query = [PFQuery queryWithClassName:[DWDog parseClassName]];
+    [query whereKey:@"user" equalTo:owner];
+    
+    NSArray* array = [query findObjects];
+    
+    for (DWDog *doggie in array) {
+        if (doggie.isNeedingPartner) {
+            return true;
+        }
+    }
+    
+    return false;
+
+}
+
 
 @end

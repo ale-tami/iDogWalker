@@ -66,7 +66,7 @@
 {
     [super viewWillAppear:animated];
     
-    [self startBlockeage];
+   // [self startBlockeage];
     [[DWDogOperations sharedInstance] getDogs:self.sentUser];
     
     self.dogs = [NSArray array];
@@ -81,11 +81,27 @@
 
         self.profileImage.image = [UIImage imageWithData: self.sentUser.profileImage.getData];
 
-        
         if (!self.profileImage.image) {
             self.profileImage.image = [UIImage imageNamed:@"placeholder"];
         }
         
+    });
+}
+
+- (void) imageForDogCell: (DWTableViewCell *) cell
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
+        
+        cell.image.layer.cornerRadius = 20;
+        cell.image.layer.masksToBounds = YES;
+   
+        NSData *dataForImage = cell.doggie.imageFile.getData;
+        cell.image.image = [UIImage imageWithData:dataForImage];
+        
+        
+        if (!dataForImage) {
+            cell.image.image = [UIImage imageNamed:@"placeholder"];
+        }
     });
 }
 
@@ -96,11 +112,12 @@
     if (!error){
         if (objects == nil && [operation isKindOfClass:[DWUserOperations class]]) {
             [self performSegueWithIdentifier:@"unwindedSegue" sender:self];
-        } else if (objects != nil && [operation isKindOfClass:[DWDogOperations class]]) {
-            self.dogs = (NSArray*)objects;
+        } else if ([operation isKindOfClass:[DWDogOperations class]]) {
+            if (objects != nil ) {
+                self.dogs = (NSArray*)objects;
+            }
             [self.tableView reloadData];
         }
-        
 
     }
 }
@@ -109,7 +126,7 @@
 
 - (IBAction)onDone:(UIBarButtonItem *)sender
 {
-    [self startBlockeage];
+  //  [self startBlockeage];
     
     [DWUser currentUser].username = self.userName.text;
     [DWUser currentUser].email = self.eMail.text;
@@ -118,7 +135,7 @@
     PFFile *imageFile = [PFFile fileWithData:imageData];
     [DWUser currentUser].profileImage = imageFile;
     
-    [self startBlockeage];
+   // [self startBlockeage];
     [[DWUserOperations sharedInstance] saveCurrentUserModifications];
 
 }
@@ -129,6 +146,21 @@
     if (self.sentUser == [DWUser currentUser]) {
          [self presentViewController:self.imagePicker animated:YES completion:nil];
     }
+}
+
+- (IBAction)onLove:(id)sender
+{
+   
+   // [self startBlockeage];
+    
+    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:buttonPosition];
+    DWTableViewCell *cell = (DWTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    
+    cell.doggie.isNeedingPartner = !cell.doggie.isNeedingPartner;
+    
+    [[DWDogOperations sharedInstance] saveDoggieModifications:cell.doggie];
+    
 }
 
 #pragma mark -- UIImagePickerController Delegates
@@ -184,16 +216,31 @@
         cell.race.hidden = YES;
         cell.imageView.image = [UIImage imageNamed:@"plus"];
         cell.image.hidden = YES;
+        cell.loveButton.hidden = YES;
        
     } else if (self.dogs.count > 0) {
+        
+        [cell.loveButton addTarget:self action:@selector(onLove:) forControlEvents:UIControlEventTouchUpInside];
         
         DWDog * dog = [self.dogs objectAtIndex:indexPath.row-1];
         cell.name.text = dog.name;
         cell.race.text = dog.race;
         cell.age.text = [dog.age stringValue];
-        cell.image.layer.cornerRadius = 20;
-        cell.image.layer.masksToBounds = YES;
-        cell.image.image = [UIImage imageWithData:dog.imageFile.getData];
+       
+        [self imageForDogCell:cell];
+        cell.doggie = dog;
+        
+        if (self.sentUser == [DWUser currentUser]) {
+            cell.loveButton.userInteractionEnabled = YES;
+        } else {
+            cell.loveButton.userInteractionEnabled = NO;
+        }
+        
+        if (dog.isNeedingPartner) {
+            cell.loveButton.imageView.image = [UIImage imageNamed:@"heartFilled"];
+        } else {
+            cell.loveButton.imageView.image = [UIImage imageNamed:@"heart"];
+        }
         
     } else {
         
@@ -203,7 +250,7 @@
         cell.age.hidden = YES;
         cell.race.hidden = YES;
         cell.image.hidden = YES;
-        
+        cell.loveButton.hidden = YES;
     }
 
     

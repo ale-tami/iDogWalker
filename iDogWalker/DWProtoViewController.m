@@ -21,14 +21,36 @@ UIActivityIndicatorView *spinner = nil;
 {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(startBlockeage:)
+                                                 name:@"NotifyOperation"
+                                               object:nil];
+    
 }
 
-- (void) startBlockeage
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+    
+    [self stopBlockeage];
+}
+
+- (void) viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:YES];
+    
+    [self stopBlockeage];
+}
+
+- (void) startBlockeage:(NSNotification *) notification
 {
 //    if (![[UIApplication sharedApplication] isIgnoringInteractionEvents])
 //    {
 //        [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
 //    }
+    
+    NSLog(@"Notification caller %@",[[notification object] description]);
+
     
     spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     spinner.center = self.view.center;
@@ -52,14 +74,24 @@ UIActivityIndicatorView *spinner = nil;
     [spinner stopAnimating];
     [spinner removeFromSuperview];
     
+    [self removeAllSpinners];
+    
+//    NSLog(@"On Unblock spinner: %@", spinner);
+//    NSLog(@"On Unblock thread: %@", [NSThread currentThread]);
+}
+
+- (void) removeAllSpinners
+{
     for (UIActivityIndicatorView *spiner in [self.view subviews])
     {
         if ([spiner isKindOfClass:[UIActivityIndicatorView class]])
+        {
+         //    NSLog(@"On remove spinner: %@", spiner);
             [spiner removeFromSuperview];
+            
+        }
     }
-   
-//    NSLog(@"On Unblock spinner: %@", spinner);
-//    NSLog(@"On Unblock thread: %@", [NSThread currentThread]);
+
 }
 
 #pragma mark -- Operation delegate

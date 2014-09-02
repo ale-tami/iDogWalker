@@ -12,7 +12,7 @@
 
 @interface DWProtoViewController : UIViewController <DWOperationsDelegate>
 
-- (void) startBlockeage;
+- (void) startBlockeage:(NSNotification *) notification;
 - (void) stopBlockeage;
 
 @end

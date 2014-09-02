@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DWDog.h"
 
 @interface DWTableViewCell : UITableViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *age;
 @property (weak, nonatomic) IBOutlet UILabel *race;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UIButton *loveButton;
+
+@property DWDog *doggie;
 
 @end

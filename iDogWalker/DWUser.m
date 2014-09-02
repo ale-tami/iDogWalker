@@ -11,6 +11,7 @@
 @implementation DWUser
 
 @dynamic profileImage;
+@dynamic doggies;
 
 + (DWUser *)user
 {

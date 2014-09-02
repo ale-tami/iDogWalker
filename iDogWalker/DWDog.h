@@ -16,6 +16,7 @@
 @property NSString *name;
 @property NSNumber *age;
 @property NSString *race;
+@property BOOL isNeedingPartner;
 
 + (NSString*) parseClassName;
 + (void) load;
