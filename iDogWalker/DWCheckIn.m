@@ -13,6 +13,7 @@
 @dynamic location;
 @dynamic user;
 
+
 + (void) load
 {
     [DWCheckIn registerSubclass];

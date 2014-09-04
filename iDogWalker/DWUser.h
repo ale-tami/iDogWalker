@@ -13,6 +13,7 @@
 
 @property PFFile *profileImage;
 @property NSArray* doggies;
+@property BOOL visibile;
 
 //+ (DWUser *)user;
 //+ (NSString*) parseClassName;

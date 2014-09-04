@@ -15,6 +15,7 @@
 @property PFGeoPoint *location;
 @property DWUser *user;
 
+
 + (NSString*) parseClassName;
 + (void) load;
 

@@ -46,6 +46,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 @property BOOL isCheckedIn;
 @property NSUserDefaults *uDefaults;
 @property NSString *stringForButton;
+@property NSTimer *timer;
 
 @end
 
@@ -63,14 +64,16 @@ static void * UserPropertyKey = &UserPropertyKey;
     
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
+    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow];
     
     self.uDefaults = [NSUserDefaults standardUserDefaults];
     self.isCheckedIn = [self.uDefaults boolForKey:isCheckedInPlist];
     if (self.isCheckedIn && ([(NSString*)[self.uDefaults objectForKey:userPlist] isEqualToString:[DWUser currentUser].email])) {
         self.checkInButton.title = checkOutButton;
-        [self annotatePeople];
-
     }
+
+    [self annotatePeople];
+
     self.navigationItem.hidesBackButton = YES;
 
 
@@ -80,6 +83,10 @@ static void * UserPropertyKey = &UserPropertyKey;
 {
     [super viewDidLoad];
 
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:secondsForUpdate
+                                                  target:self
+                                                selector:@selector(executeUpdate)
+                                                userInfo:nil repeats:YES];
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -143,13 +150,22 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 - (void) annotatePeople
 {
-    if (self.isCheckedIn) {
+ //   if (self.isCheckedIn) {
       //  [self startBlockeage];
 
         [[DWUserOperations sharedInstance] getNerbyWalkers:self.mapView.userLocation.coordinate];
-    }
+   // }
 }
 
+- (void) executeUpdate
+{
+    [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
+    
+    [self annotatePeople];
+    
+    NSLog(@"Executed");
+
+}
 
 - (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
@@ -164,12 +180,14 @@ static void * UserPropertyKey = &UserPropertyKey;
         self.mapView.showsUserLocation = NO;
         for (DWCheckIn *checkIn in ((NSArray*)objects))
         {
-            MKPointAnnotation *annotation = [MKPointAnnotation new];
-            annotation.coordinate = CLLocationCoordinate2DMake(checkIn.location.latitude, checkIn.location.longitude);
-            annotation.title = checkIn.user.username;
-            annotation.user = checkIn.user;
-            [self.mapView addAnnotation:annotation];
+            if (checkIn.user.visibile) {
             
+                MKPointAnnotation *annotation = [MKPointAnnotation new];
+                annotation.coordinate = CLLocationCoordinate2DMake(checkIn.location.latitude, checkIn.location.longitude);
+                annotation.title = checkIn.user.username;
+                annotation.user = checkIn.user;
+                [self.mapView addAnnotation:annotation];
+            }
         }
         self.mapView.showsUserLocation = YES;
 
@@ -186,11 +204,12 @@ static void * UserPropertyKey = &UserPropertyKey;
         [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
         sender.title = checkOutButton;
         self.isCheckedIn = YES;
+
     } else {
         [[DWUserOperations sharedInstance] checkOutCurrentUser];
         sender.title = checkInButton;
         self.isCheckedIn = NO;
-        [self.mapView removeAnnotations:self.mapView.annotations];
+        //[self.mapView removeAnnotations:self.mapView.annotations];
 
     }
     
@@ -204,7 +223,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 - (IBAction)onRefresh:(UIBarButtonItem *)sender
 {
-    [self annotatePeople];
+    [self executeUpdate];
 }
 
 - (IBAction)onProfileTap:(UIBarButtonItem *)sender
@@ -258,6 +277,7 @@ static void * UserPropertyKey = &UserPropertyKey;
     [self performSegueWithIdentifier:toProfile sender:view];
         
 }
+
 
 -(void) mapViewDidFinishLoadingMap:(MKMapView *)mapView
 {

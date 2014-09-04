@@ -20,14 +20,15 @@ NSString *const toLogout = @"toLogout";
 
 NSString *const isCheckedInPlist = @"isCheckedIn";
 NSString *const userPlist = @"User";
-NSString *const checkOutButton = @"Check-Out";
-NSString *const checkInButton = @"Check-In!";
+NSString *const checkOutButton = @"Go Invisible";
+NSString *const checkInButton = @"Go Visible";
 NSString *const annotationText = @"annotation";
 NSString *const userPinTitle = @"YOU!";
 int const regionCoordinateSpan = 0.03;
 float const avatarCornerRadius = 23.0;
 float const pinXOffset = -13;
 float const pinYOffset = -23;
+float const secondsForUpdate = 300.0;
 
 
 #pragma mark -- Image names

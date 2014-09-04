@@ -58,35 +58,54 @@ static DWUserOperations *operations = nil;
 - (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
-
-    DWCheckIn *checkIn = [DWCheckIn object];
-    checkIn.location = [PFGeoPoint geoPointWithLatitude:coordinates.latitude longitude:coordinates.longitude];
-    checkIn.user = [DWUser currentUser];
     
-    [checkIn saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
-        
-    }];
-
-}
-
-- (void) checkOutCurrentUser
-{
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
-
     PFQuery *query = [PFQuery queryWithClassName:[DWCheckIn parseClassName]];
     
     [query whereKey:@"user" equalTo:[DWUser currentUser]];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    
+    DWCheckIn *checkIn = [objects firstObject];
         
-        DWCheckIn *checkIn = [objects firstObject];
+    if (!checkIn)
+        checkIn = [DWCheckIn object];
         
-        [checkIn deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    //DWCheckIn *checkIn = [DWCheckIn object];
+        checkIn.location = [PFGeoPoint geoPointWithLatitude:coordinates.latitude longitude:coordinates.longitude];
+        
+        [DWUser currentUser].visibile = YES;
+        checkIn.user = [DWUser currentUser];
+        
+        [checkIn saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
             
         }];
+        
     }];
+}
+
+- (void) checkOutCurrentUser
+{
+    
+    [DWUser currentUser].visibile = NO;
+    
+    [self saveCurrentUserModifications];
+    
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+//
+//    PFQuery *query = [PFQuery queryWithClassName:[DWCheckIn parseClassName]];
+//    
+//    [query whereKey:@"user" equalTo:[DWUser currentUser]];
+//    
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        
+//        DWCheckIn *checkIn = [objects firstObject];
+//        
+//        [checkIn deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//            [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+//            
+//        }];
+//    }];
 }
 
 

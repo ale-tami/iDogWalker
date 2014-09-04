@@ -29,6 +29,7 @@ extern int const regionCoordinateSpan;
 extern float const avatarCornerRadius;
 extern float const pinXOffset;
 extern float const pinYOffset;
+extern float const secondsForUpdate;
 
 #pragma mark -- Image names
 

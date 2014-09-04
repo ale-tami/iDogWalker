@@ -12,6 +12,7 @@
 
 @dynamic profileImage;
 @dynamic doggies;
+@dynamic visibile;
 
 + (DWUser *)user
 {

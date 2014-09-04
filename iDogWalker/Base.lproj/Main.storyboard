@@ -186,7 +186,7 @@
                                 <action selector="onLogout:" destination="Li3-0Y-65W" id="Uq2-DB-VCi"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Check-In!" id="sVr-Ys-XES">
+                        <barButtonItem key="rightBarButtonItem" title="Go Visible" id="sVr-Ys-XES">
                             <connections>
                                 <action selector="onCheckIn:" destination="Li3-0Y-65W" id="mrp-DY-g4W"/>
                             </connections>

@@ -53,7 +53,7 @@ UIActivityIndicatorView *spinner = nil;
 //        [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
 //    }
     
-    NSLog(@"Notification caller %@",[[notification object] description]);
+//    NSLog(@"Notification caller %@",[[notification object] description]);
 
     if  (!spinner){
         spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
