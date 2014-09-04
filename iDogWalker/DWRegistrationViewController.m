@@ -46,12 +46,21 @@
     
   //  [self startBlockeage];
     
-    DWUserOperations *userOps = [DWUserOperations new];
-    [userOps saveUser:self.userNameField.text
+    [DWUserOperations sharedInstance].delegate = self;
+    [[DWUserOperations sharedInstance] saveUser:self.userNameField.text
                 eMail:self.emailField.text
              password:self.passwordField.text
          profileImage:self.profileImageView.image];
-    userOps.delegate = self;
+    
+}
+
+- (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
+{
+    [super operationCompleteFromOperation:operation withObjects:objects withError:error];
+    
+    if (!error) {
+        [self performSegueWithIdentifier:@"toAppFromRegistration" sender:self];
+    }
 }
 
 

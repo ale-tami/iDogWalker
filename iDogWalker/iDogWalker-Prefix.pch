@@ -15,4 +15,5 @@
     #import <Foundation/Foundation.h>
     #import <Parse/Parse.h>
     #import "DWUser.h"
+    #import "DWConstans.h"
 #endif

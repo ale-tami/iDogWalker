@@ -27,7 +27,7 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 
     if ([PFUser currentUser] /*&& [[PFUser currentUser] isAuthenticated]*/) {
-        [self performSegueWithIdentifier:@"toApp" sender:self];
+        [self performSegueWithIdentifier:toApp sender:self];
     }
 
 }
@@ -70,7 +70,7 @@
     [super operationCompleteFromOperation:operation withObjects:objects withError:error];
     
     if (!error) {
-        [self performSegueWithIdentifier:@"toApp" sender:self];
+        [self performSegueWithIdentifier:toApp sender:self];
     }
 }
 

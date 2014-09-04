@@ -64,7 +64,7 @@
                         <outlet property="passwordField" destination="PZD-if-Qs0" id="9i3-hJ-vRT"/>
                         <outlet property="profileImageView" destination="cWf-e1-Fl0" id="q7i-rk-2SF"/>
                         <outlet property="userNameField" destination="UtT-8g-5TY" id="bef-9b-Jen"/>
-                        <segue destination="2wv-z0-pZL" kind="push" identifier="toAppFromRegistration" id="HHM-MD-obV"/>
+                        <segue destination="Li3-0Y-65W" kind="push" identifier="toAppFromRegistration" id="YRM-ad-0ll"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktv-2d-Eh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -515,6 +515,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bVD-Gj-YGz"/>
+        <segue reference="YRM-ad-0ll"/>
     </inferredMetricsTieBreakers>
 </document>

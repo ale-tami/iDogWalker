@@ -65,9 +65,9 @@ static void * UserPropertyKey = &UserPropertyKey;
     self.mapView.showsUserLocation = YES;
     
     self.uDefaults = [NSUserDefaults standardUserDefaults];
-    self.isCheckedIn = [self.uDefaults boolForKey:@"isCheckedIn"];
-    if (self.isCheckedIn) {
-        self.checkInButton.title = @"Check-Out";
+    self.isCheckedIn = [self.uDefaults boolForKey:isCheckedInPlist];
+    if (self.isCheckedIn && ([[self.uDefaults objectForKey:userPlist] isEqual:[DWUser currentUser]])) {
+        self.checkInButton.title = checkOutButton;
         [self annotatePeople];
 
     }
@@ -108,7 +108,7 @@ static void * UserPropertyKey = &UserPropertyKey;
         
         if (needsHeart) {
          //   pin.image = [UIImage imageNamed:@"heartFilled"];
-             imageView.image = [UIImage imageNamed:@"heartFilled"];
+             imageView.image = [UIImage imageNamed:heartFilled];
         }else {
         //    pin.image = [UIImage imageWithData:dataForImage];
             imageView.image = [UIImage imageWithData:dataForImage];
@@ -116,7 +116,7 @@ static void * UserPropertyKey = &UserPropertyKey;
         
         if (!dataForImage) {
          //   pin.image = [UIImage imageNamed:@"placeholder"];
-            imageView.image = [UIImage imageNamed:@"placeholder"];
+            imageView.image = [UIImage imageNamed:placeholder];
         }
 //        
 //        pin.contentMode = UIViewContentModeScaleAspectFit;
@@ -132,10 +132,10 @@ static void * UserPropertyKey = &UserPropertyKey;
         
        // imageView.layer.borderColor = [[UIColor blueColor] CGColor];
       //  imageView.layer.borderWidth = 0.5;
-        imageView.layer.cornerRadius = 23.0;
+        imageView.layer.cornerRadius = avatarCornerRadius;
         imageView.layer.masksToBounds = YES;
         
-        pin.centerOffset = CGPointMake(-13, -23);
+        pin.centerOffset =  CGPointMake(pinXOffset, pinYOffset);
         [pin addSubview:imageView];
         
     });
@@ -184,17 +184,19 @@ static void * UserPropertyKey = &UserPropertyKey;
 {
     if (!self.isCheckedIn) {
         [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
-        sender.title = @"Check-Out";
+        sender.title = checkOutButton;
         self.isCheckedIn = YES;
     } else {
         [[DWUserOperations sharedInstance] checkOutCurrentUser];
-        sender.title = @"Check-In!";
+        sender.title = checkInButton;
         self.isCheckedIn = NO;
         [self.mapView removeAnnotations:self.mapView.annotations];
 
     }
     
-    [self.uDefaults setBool:self.isCheckedIn forKey:@"isCheckedIn"];
+    [self.uDefaults setBool:self.isCheckedIn forKey:isCheckedInPlist];
+    [self.uDefaults setObject:[DWUser currentUser] forKey:userPlist];
+
     [self.uDefaults synchronize];
     
     [self annotatePeople];
@@ -207,7 +209,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 - (IBAction)onProfileTap:(UIBarButtonItem *)sender
 {
-    [self performSegueWithIdentifier:@"toProfile" sender:nil];
+    [self performSegueWithIdentifier:toProfile sender:nil];
 }
 
 - (IBAction)onLogout:(UIBarButtonItem *)sender
@@ -224,21 +226,21 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
-    MKAnnotationView *pin = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"annotation"];
-    pin.image = [UIImage imageNamed:@"imagefiles-location_map_pin_blue"];
+    MKAnnotationView *pin = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:annotationText];
+    pin.image = [UIImage imageNamed:pinImage];
     pin.canShowCallout = YES;
     
     if (annotation == mapView.userLocation) {
         MKCoordinateSpan coordinateSpan;
-        coordinateSpan.latitudeDelta = 0.03;
-        coordinateSpan.longitudeDelta = 0.03;
+        coordinateSpan.latitudeDelta = regionCoordinateSpan;
+        coordinateSpan.longitudeDelta = regionCoordinateSpan;
         MKCoordinateRegion region;
         region.center = mapView.userLocation.coordinate;
         region.span = coordinateSpan;
         
         [self.mapView setRegion:region animated:YES];
         
-        ((MKPointAnnotation*)pin.annotation).title = @"YOU!";
+        ((MKPointAnnotation*)pin.annotation).title = userPinTitle;
         
         [self imageForPin:pin andUser:[DWUser currentUser]];
         
@@ -253,7 +255,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
-    [self performSegueWithIdentifier:@"toProfile" sender:view];
+    [self performSegueWithIdentifier:toProfile sender:view];
         
 }
 
@@ -268,10 +270,10 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if (sender && ![segue.identifier isEqualToString:@"toLogout"]) {
+    if (sender && ![segue.identifier isEqualToString:toLogout]) {
         DWUser *user = ((MKPointAnnotation*)((MKAnnotationView*)sender).annotation).user;
         ((DWProfileViewController *)segue.destinationViewController).sentUser = user;
-    } else if ([segue.identifier isEqualToString:@"toLogout"]) {
+    } else if ([segue.identifier isEqualToString:toLogout]) {
         
     }else {
         ((DWProfileViewController *)segue.destinationViewController).sentUser = nil;
