@@ -15,6 +15,7 @@
 
 + (instancetype) sharedInstance;
 
+- (void) loginUser: (NSString *) user andPassword:(NSString *) pass;
 - (void) saveUser:(NSString*)userName eMail: (NSString*)email password:(NSString*) password profileImage:(UIImage*) image;
 - (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates;
 - (void) checkOutCurrentUser;

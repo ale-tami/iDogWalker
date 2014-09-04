@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DWProtoViewController.h"
 
-@interface DWViewController : UIViewController
+@interface DWViewController : DWProtoViewController
 
 @end

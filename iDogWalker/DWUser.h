@@ -14,7 +14,7 @@
 @property PFFile *profileImage;
 @property NSArray* doggies;
 
-+ (DWUser *)user;
+//+ (DWUser *)user;
 //+ (NSString*) parseClassName;
 + (void) load;
 

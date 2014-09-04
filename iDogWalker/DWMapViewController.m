@@ -38,7 +38,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 #pragma mark -- END -- category for MKPointAnnotation
 
 
-@interface DWMapViewController () <MKMapViewDelegate>
+@interface DWMapViewController () <MKMapViewDelegate, UINavigationBarDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *checkInButton;
@@ -73,6 +73,7 @@ static void * UserPropertyKey = &UserPropertyKey;
     }
     self.navigationItem.hidesBackButton = YES;
 
+
 }
 
 - (void)viewDidLoad
@@ -84,7 +85,9 @@ static void * UserPropertyKey = &UserPropertyKey;
 - (void) viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
-    self.navigationItem.leftBarButtonItem = NO;
+   
+    [self.navigationController setToolbarHidden:TRUE];
+   // self.navigationItem.leftBarButtonItem = NO;
 }
 
 #pragma mark -- other convenient methods
@@ -207,6 +210,16 @@ static void * UserPropertyKey = &UserPropertyKey;
     [self performSegueWithIdentifier:@"toProfile" sender:nil];
 }
 
+- (IBAction)onLogout:(UIBarButtonItem *)sender
+{
+    [DWUser logOut];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+   
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
+
 #pragma mark -- MapView Delegates
 
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
@@ -255,10 +268,12 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if (sender) {
+    if (sender && ![segue.identifier isEqualToString:@"toLogout"]) {
         DWUser *user = ((MKPointAnnotation*)((MKAnnotationView*)sender).annotation).user;
         ((DWProfileViewController *)segue.destinationViewController).sentUser = user;
-    } else {
+    } else if ([segue.identifier isEqualToString:@"toLogout"]) {
+        
+    }else {
         ((DWProfileViewController *)segue.destinationViewController).sentUser = nil;
     }
     

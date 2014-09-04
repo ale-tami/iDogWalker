@@ -99,7 +99,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eMail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9xG-PM-Lwq">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9xG-PM-Lwq">
                                 <rect key="frame" x="20" y="152" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -181,6 +181,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="iDogWalker" id="ThC-jz-9BO">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="IJ0-YY-yvo">
+                            <connections>
+                                <action selector="onLogout:" destination="Li3-0Y-65W" id="Uq2-DB-VCi"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Check-In!" id="sVr-Ys-XES">
                             <connections>
                                 <action selector="onCheckIn:" destination="Li3-0Y-65W" id="mrp-DY-g4W"/>
@@ -457,7 +462,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rkD-09-fmt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DiD-r2-ApJ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="DiD-r2-ApJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qOC-tw-cNU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

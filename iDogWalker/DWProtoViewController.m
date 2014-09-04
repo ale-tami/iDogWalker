@@ -7,6 +7,8 @@
 //
 
 #import "DWProtoViewController.h"
+#import "DWUserOperations.h"
+#import "DWDogOperations.h"
 
 @interface DWProtoViewController ()
 
@@ -20,6 +22,8 @@ UIActivityIndicatorView *spinner = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(startBlockeage:)
@@ -51,8 +55,9 @@ UIActivityIndicatorView *spinner = nil;
     
     NSLog(@"Notification caller %@",[[notification object] description]);
 
-    
-    spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    if  (!spinner){
+        spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    }
     spinner.center = self.view.center;
     spinner.hidesWhenStopped = YES;
     spinner.color = [UIColor blueColor];

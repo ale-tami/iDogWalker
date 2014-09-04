@@ -24,13 +24,24 @@ static DWUserOperations *operations = nil;
     }
 }
 
+- (void) loginUser: (NSString *) user andPassword:(NSString *) pass
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+    
+    [DWUser logInWithUsernameInBackground:user password:pass block:^(PFUser *user, NSError *error) {
+        if(error.code == 101 ){
+            error = [NSError errorWithDomain:@"Wrong User Name / Password" code:101 userInfo:nil];
+        }
+        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
 
+    }];
+}
 
 - (void) saveUser:(NSString*)userName eMail: (NSString*)email password:(NSString*) password profileImage:(UIImage*) image
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
 
-    DWUser *user = [DWUser user];
+    DWUser *user = (DWUser*)[DWUser user];
     user.username = userName;
     user.password = password;
     user.email = email;
