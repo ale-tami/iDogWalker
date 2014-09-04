@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iDogWalker/DWUserOperations.m"
-            timestampString = "431472868.400443"
+            timestampString = "431559690.176523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-loginUser:andPassword:"
             landmarkType = "5">
          </BreakpointContent>

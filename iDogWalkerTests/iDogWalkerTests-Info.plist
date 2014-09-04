@@ -18,5 +18,20 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>690986340977897</string>
+	<key>FacebookDisplayName</key>
+	<string>iDogWalker</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb690986340977897</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

@@ -122,6 +122,9 @@
                                 <state key="normal" image="facebook_login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onFbLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zer-Pe-VNs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BK-Fu-4zt">
                                 <rect key="frame" x="58" y="302" width="204" height="28"/>
@@ -515,6 +518,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="9yS-ii-GFk"/>
+        <segue reference="bVD-Gj-YGz"/>
     </inferredMetricsTieBreakers>
 </document>

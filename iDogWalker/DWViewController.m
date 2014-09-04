@@ -27,7 +27,10 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 
     if ([PFUser currentUser] /*&& [[PFUser currentUser] isAuthenticated]*/) {
-        [self performSegueWithIdentifier:toApp sender:self];
+        if ([PFFacebookUtils isLinkedWithUser:[PFUser currentUser]])
+        {
+            [self performSegueWithIdentifier:toApp sender:self];
+        }
     }
 
 }
@@ -43,6 +46,12 @@
 {
     [super viewWillDisappear:YES];
     self.navigationController.navigationBarHidden = NO;
+}
+- (IBAction)onFbLogin:(UIButton *)sender
+{
+    [DWUserOperations sharedInstance].delegate = self;
+    
+    [[DWUserOperations sharedInstance] facebookLogin];
 }
 
 - (IBAction)onLogin:(UIButton *)sender

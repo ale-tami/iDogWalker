@@ -8,6 +8,7 @@
 
 #import "DWUserOperations.h"
 #import "DWCheckIn.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @implementation DWUserOperations
 
@@ -22,6 +23,49 @@ static DWUserOperations *operations = nil;
         
         return operations = [DWUserOperations new];
     }
+}
+
+- (void) facebookLogin
+{
+    [PFFacebookUtils initializeFacebook];
+    
+    NSArray *permissionsArray = @[ @"user_about_me", @"status_update"];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+    
+    [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
+
+        FBRequest *request = [FBRequest requestForMe];
+        [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+            if (!error) {
+                // result is a dictionary with the user's Facebook data
+                NSDictionary *userData = (NSDictionary *)result;
+                
+                NSString *facebookID = userData[@"id"];
+                NSString *name = userData[@"name"];
+                
+                NSURL *pictureURL = [NSURL URLWithString:
+                                     [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
+                
+                
+                NSURLRequest *request = [NSURLRequest requestWithURL:pictureURL];
+                
+                [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                    PFFile *imageFile = [PFFile fileWithName:@"profile.png" data:data];
+                    [DWUser currentUser].profileImage = imageFile;
+                    [DWUser currentUser].username = name;
+                    
+                    [[DWUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+                    }];
+                    
+                    
+                }];
+            }
+        }];
+       
+       
+    }];
 }
 
 - (void) loginUser: (NSString *) user andPassword:(NSString *) pass
