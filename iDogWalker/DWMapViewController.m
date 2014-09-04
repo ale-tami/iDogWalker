@@ -66,7 +66,7 @@ static void * UserPropertyKey = &UserPropertyKey;
     
     self.uDefaults = [NSUserDefaults standardUserDefaults];
     self.isCheckedIn = [self.uDefaults boolForKey:isCheckedInPlist];
-    if (self.isCheckedIn && ([[self.uDefaults objectForKey:userPlist] isEqual:[DWUser currentUser]])) {
+    if (self.isCheckedIn && ([(NSString*)[self.uDefaults objectForKey:userPlist] isEqualToString:[DWUser currentUser].email])) {
         self.checkInButton.title = checkOutButton;
         [self annotatePeople];
 
@@ -195,7 +195,7 @@ static void * UserPropertyKey = &UserPropertyKey;
     }
     
     [self.uDefaults setBool:self.isCheckedIn forKey:isCheckedInPlist];
-    [self.uDefaults setObject:[DWUser currentUser] forKey:userPlist];
+    [self.uDefaults setValue:[DWUser currentUser].email  forKey:userPlist];
 
     [self.uDefaults synchronize];
     
