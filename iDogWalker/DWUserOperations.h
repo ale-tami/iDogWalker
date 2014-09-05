@@ -22,5 +22,6 @@
 - (void) checkOutCurrentUser;
 - (void) getNerbyWalkers:(CLLocationCoordinate2D) coordinate;
 - (void) saveCurrentUserModifications;
+- (void) postToFacebookWall: (NSString *) name;
 
 @end

@@ -141,8 +141,10 @@ static void * UserPropertyKey = &UserPropertyKey;
       //  imageView.layer.borderWidth = 0.5;
         imageView.layer.cornerRadius = avatarCornerRadius;
         imageView.layer.masksToBounds = YES;
-        
-        pin.centerOffset =  CGPointMake(pinXOffset, pinYOffset);
+        [UIView animateWithDuration:1.0 animations:^{
+            pin.centerOffset =  CGPointMake(pinXOffset, pinYOffset);
+        }];
+
         [pin addSubview:imageView];
         
     });
@@ -197,11 +199,31 @@ static void * UserPropertyKey = &UserPropertyKey;
 }
 
 
+- (void) reverseGeocodingAndPostToFacebook
+{
+    
+    CLGeocoder *geocoder = [CLGeocoder new];
+    
+    [geocoder reverseGeocodeLocation:self.mapView.userLocation.location completionHandler:^(NSArray *placemarks, NSError *error){
+
+        [[DWUserOperations sharedInstance] postToFacebookWall:((CLPlacemark*)[placemarks firstObject]).name];
+        
+    }];
+    
+}
+
 #pragma mark -- IBActions
 - (IBAction)onCheckIn:(UIBarButtonItem *)sender
 {
     if (!self.isCheckedIn) {
         [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
+        
+        if ([PFFacebookUtils isLinkedWithUser:[PFUser currentUser]])
+        {
+            [self reverseGeocodingAndPostToFacebook];
+        }
+        
+        
         sender.title = checkOutButton;
         self.isCheckedIn = YES;
 

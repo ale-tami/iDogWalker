@@ -47,6 +47,7 @@
         self.navigationItem.rightBarButtonItem.enabled = NO;
         [self.navigationItem.rightBarButtonItem setTintColor:[UIColor clearColor]];
         self.title = [NSString stringWithFormat:@"%@'s Profile", self.sentUser.username];
+    
     }
     
     self.userName.text = self.sentUser.username;

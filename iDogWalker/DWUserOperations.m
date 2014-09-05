@@ -25,11 +25,14 @@ static DWUserOperations *operations = nil;
     }
 }
 
+
+
+
 - (void) facebookLogin
 {
     [PFFacebookUtils initializeFacebook];
     
-    NSArray *permissionsArray = @[ @"user_about_me", @"status_update"];
+    NSArray *permissionsArray = @[ @"user_about_me", @"status_update", @"publish_actions"];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
     
@@ -61,6 +64,8 @@ static DWUserOperations *operations = nil;
                     
                     
                 }];
+            } else {
+                 [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
             }
         }];
        
@@ -121,8 +126,27 @@ static DWUserOperations *operations = nil;
         checkIn.user = [DWUser currentUser];
         
         [checkIn saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
             
+//            [FBSession openActiveSessionWithAllowLoginUI:NO];
+//            
+//            NSMutableDictionary* params = [[NSMutableDictionary alloc]init];
+//        //    [params setObject:@"Testing" forKey:@"name"];
+//            [params setObject:@"Blah" forKey:@"message"];
+//            [params setObject:@"iDogWalker" forKey:@"application"];
+//           // [params setObject:@"IMAGE_URL" forKey:@"picture"];
+//           // [params setObject:@"Blah" forKey:@"description"];
+//            
+//            FBRequest *request= [[FBRequest alloc] initWithSession:FBSession.activeSession
+//                                                         graphPath:@"me/feed"
+//                                                        parameters:params
+//                                                        HTTPMethod:@"POST"];
+//            
+//            [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+//                [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+//                
+//            }];
+              [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+
         }];
         
     }];
@@ -179,6 +203,34 @@ static DWUserOperations *operations = nil;
     [[DWUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
     }];
+}
+
+- (void) postToFacebookWall: (NSString *) name
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
+    [FBSession openActiveSessionWithAllowLoginUI:NO];
+    
+    NSMutableDictionary* params = [[NSMutableDictionary alloc]init];
+    
+    NSString *checkedIn = [NSString stringWithFormat:@"I've just checked in at %@", name ];
+
+    [params setObject:checkedIn forKey:@"message"];
+    [params setObject:@"iDogWalker" forKey:@"application"];
+
+  
+    
+    FBRequest *request= [[FBRequest alloc] initWithSession:FBSession.activeSession
+                                                 graphPath:@"me/feed"
+                                                parameters:params
+                                                HTTPMethod:@"POST"];
+    
+    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+
+    }];
+    
+  
 }
 
 @end

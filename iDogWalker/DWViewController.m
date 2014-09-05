@@ -27,10 +27,10 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 
     if ([PFUser currentUser] /*&& [[PFUser currentUser] isAuthenticated]*/) {
-        if ([PFFacebookUtils isLinkedWithUser:[PFUser currentUser]])
-        {
+//        if ([PFFacebookUtils isLinkedWithUser:[PFUser currentUser]])
+//        {
             [self performSegueWithIdentifier:toApp sender:self];
-        }
+      //  }
     }
 
 }
