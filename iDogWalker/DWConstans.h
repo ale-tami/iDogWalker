@@ -31,6 +31,11 @@ extern float const pinXOffset;
 extern float const pinYOffset;
 extern float const secondsForUpdate;
 
+#pragma mark -- SettingsViewController
+
+extern NSString *const searchRadius;
+extern NSString *const refreshTime;
+
 #pragma mark -- Image names
 
 extern NSString *const heartFilled;

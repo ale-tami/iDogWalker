@@ -83,7 +83,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 {
     [super viewDidLoad];
 
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:secondsForUpdate
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:[[[NSUserDefaults standardUserDefaults] objectForKey:refreshTime] floatValue] * 60
                                                   target:self
                                                 selector:@selector(executeUpdate)
                                                 userInfo:nil repeats:YES];
@@ -94,6 +94,8 @@ static void * UserPropertyKey = &UserPropertyKey;
     [super viewWillDisappear:YES];
    
     [self.navigationController setToolbarHidden:TRUE];
+    
+    [self.timer invalidate];
    // self.navigationItem.leftBarButtonItem = NO;
 }
 
@@ -108,9 +110,7 @@ static void * UserPropertyKey = &UserPropertyKey;
         
         BOOL needsHeart = [[DWDogOperations sharedInstance] userHasDogsInNeed:user];
         
-        UIImageView *imageView = [UIImageView new];
-        
-
+        PFImageView *imageView = [PFImageView new];
         
         
         if (needsHeart) {

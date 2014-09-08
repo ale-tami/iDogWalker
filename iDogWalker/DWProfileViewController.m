@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 @property (weak, nonatomic) IBOutlet UITextField *eMail;
-@property (weak, nonatomic) IBOutlet UIButton *befriendChangePassword;
+@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
 @property (weak, nonatomic) IBOutlet UILabel *friendsAmount;
 @property (weak, nonatomic) IBOutlet UILabel *lastCheckIn;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -39,7 +39,7 @@
     
     if (!self.sentUser) {
         self.sentUser = [DWUser currentUser];
-        [self.befriendChangePassword setTitle:@"Change Password" forState:UIControlStateNormal];
+        //[self.befriendChangePassword setTitle:@"Change Password" forState:UIControlStateNormal];
         self.title = @"Your Profile";
     } else {
         self.userName.userInteractionEnabled = NO;
@@ -47,7 +47,7 @@
         self.navigationItem.rightBarButtonItem.enabled = NO;
         [self.navigationItem.rightBarButtonItem setTintColor:[UIColor clearColor]];
         self.title = [NSString stringWithFormat:@"%@'s Profile", self.sentUser.username];
-    
+        self.settingsButton.hidden = YES;
     }
     
     self.userName.text = self.sentUser.username;
@@ -164,51 +164,7 @@
     
 }
 
-- (IBAction)onChangePassword:(UIButton *)sender
-{
-    if (self.sentUser == [DWUser currentUser]) {
-        
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Change password"
-                                                          message:nil
-                                                         delegate:self
-                                                cancelButtonTitle:@"Cancel"
-                                                otherButtonTitles:@"Continue", nil];
-        alertView.delegate = self;
-        
-        [alertView setAlertViewStyle:UIAlertViewStyleLoginAndPasswordInput];
-        
-        [alertView textFieldAtIndex:0].placeholder = @"Password";
-        [alertView textFieldAtIndex:0].secureTextEntry = YES;
-        
-        [alertView textFieldAtIndex:1].placeholder = @"Repeat Password";
-        [alertView textFieldAtIndex:1].secureTextEntry = YES;
-        
-        [alertView show];
-    }
-}
 
-- (BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView
-{
-    NSString *inputText1 = [[alertView textFieldAtIndex:0] text];
-    NSString *inputText2 = [[alertView textFieldAtIndex:1] text];
-    
-    if( [inputText1 isEqualToString:inputText2])
-    {
-        return YES;
-    }
-    else
-    {
-        return NO;
-    }
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == 1) {
-        [DWUser currentUser].password = [alertView textFieldAtIndex:1].text;
-        [[DWUserOperations sharedInstance] saveCurrentUserModifications];
-    }
-}
 
 #pragma mark -- UIImagePickerController Delegates
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info

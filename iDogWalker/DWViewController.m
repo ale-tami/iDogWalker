@@ -46,7 +46,9 @@
 {
     [super viewWillDisappear:YES];
     self.navigationController.navigationBarHidden = NO;
+    
 }
+
 - (IBAction)onFbLogin:(UIButton *)sender
 {
     [DWUserOperations sharedInstance].delegate = self;

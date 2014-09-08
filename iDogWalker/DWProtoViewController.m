@@ -56,7 +56,7 @@ UIActivityIndicatorView *spinner = nil;
 //    NSLog(@"Notification caller %@",[[notification object] description]);
 
     if  (!spinner){
-        spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     }
     spinner.center = self.view.center;
     spinner.hidesWhenStopped = YES;

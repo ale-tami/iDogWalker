@@ -30,6 +30,10 @@ float const pinXOffset = -13;
 float const pinYOffset = -23;
 float const secondsForUpdate = 300.0;
 
+#pragma mark -- SettingsViewController
+NSString *const searchRadius = @"searchRadius";
+NSString *const refreshTime = @"refreshTime";
+
 
 #pragma mark -- Image names
 

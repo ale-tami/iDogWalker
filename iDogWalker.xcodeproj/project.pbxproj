@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4DAA33C219B89C5300873EEF /* DWConstans.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA33C119B89C5300873EEF /* DWConstans.m */; };
 		4DAA33C419B8FA4000873EEF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAA33C319B8FA4000873EEF /* FacebookSDK.framework */; };
+		4DAA33C719BDE6A600873EEF /* DWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA33C619BDE6A600873EEF /* DWSettingsViewController.m */; };
 		4DAAFB4A19AF7AC600D1EAE5 /* DWDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAAFB4919AF7AC600D1EAE5 /* DWDog.m */; };
 		4DAAFB4D19AF83DD00D1EAE5 /* DWDogOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAAFB4C19AF83DD00D1EAE5 /* DWDogOperations.m */; };
 		4DAAFB5219AFD3C300D1EAE5 /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4DAAFB5119AFD3C300D1EAE5 /* default.gpx */; };
@@ -66,6 +67,8 @@
 		4DAA33C019B89C5300873EEF /* DWConstans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWConstans.h; sourceTree = "<group>"; };
 		4DAA33C119B89C5300873EEF /* DWConstans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWConstans.m; sourceTree = "<group>"; };
 		4DAA33C319B8FA4000873EEF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		4DAA33C519BDE6A600873EEF /* DWSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWSettingsViewController.h; sourceTree = "<group>"; };
+		4DAA33C619BDE6A600873EEF /* DWSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWSettingsViewController.m; sourceTree = "<group>"; };
 		4DAAFB4819AF7AC600D1EAE5 /* DWDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWDog.h; sourceTree = "<group>"; };
 		4DAAFB4919AF7AC600D1EAE5 /* DWDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWDog.m; sourceTree = "<group>"; };
 		4DAAFB4B19AF83DD00D1EAE5 /* DWDogOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWDogOperations.h; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 				4DB62B1919AE675000A595C2 /* DWProfileViewController.m */,
 				4DAAFB5319B0B4FA00D1EAE5 /* DWAddDoggieViewController.h */,
 				4DAAFB5419B0B4FA00D1EAE5 /* DWAddDoggieViewController.m */,
+				4DAA33C519BDE6A600873EEF /* DWSettingsViewController.h */,
+				4DAA33C619BDE6A600873EEF /* DWSettingsViewController.m */,
 				4DAB86E119A7ADB200388180 /* Images.xcassets */,
 				4DAB86D019A7ADB200388180 /* Supporting Files */,
 			);
@@ -415,6 +420,7 @@
 				4DB62B1619AE657F00A595C2 /* DWTableViewCell.m in Sources */,
 				4DAAFB5519B0B4FA00D1EAE5 /* DWAddDoggieViewController.m in Sources */,
 				4DAA33C219B89C5300873EEF /* DWConstans.m in Sources */,
+				4DAA33C719BDE6A600873EEF /* DWSettingsViewController.m in Sources */,
 				4DAB86DA19A7ADB200388180 /* DWAppDelegate.m in Sources */,
 				4DAAFB4D19AF83DD00D1EAE5 /* DWDogOperations.m in Sources */,
 				4DB62B1319AD3F4700A595C2 /* DWProtoViewController.m in Sources */,

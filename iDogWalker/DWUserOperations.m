@@ -186,9 +186,9 @@ static DWUserOperations *operations = nil;
     [query includeKey:@"user"];
     [query whereKey:@"user" notEqualTo:[DWUser currentUser]];
     [query whereKey:@"location" nearGeoPoint:
-        [PFGeoPoint geoPointWithLatitude:coordinate.latitude
-                               longitude:coordinate.longitude]
-                        withinKilometers:1.0f];
+    [PFGeoPoint geoPointWithLatitude:coordinate.latitude
+                           longitude:coordinate.longitude]
+                    withinKilometers:[[NSUserDefaults standardUserDefaults] floatForKey:searchRadius] ];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         [self.delegate operationCompleteFromOperation:self withObjects:objects withError: error];

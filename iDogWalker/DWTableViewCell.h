@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *age;
 @property (weak, nonatomic) IBOutlet UILabel *race;
-@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet PFImageView *image;
 @property (weak, nonatomic) IBOutlet UIButton *loveButton;
 
 @property DWDog *doggie;

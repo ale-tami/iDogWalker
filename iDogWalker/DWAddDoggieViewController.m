@@ -10,7 +10,7 @@
 #import "DWDogOperations.h"
 
 @interface DWAddDoggieViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *profileImage;
+@property (weak, nonatomic) IBOutlet PFImageView *profileImage;
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *race;
 @property (weak, nonatomic) IBOutlet UITextField *age;

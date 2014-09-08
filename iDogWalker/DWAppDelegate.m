@@ -8,12 +8,27 @@
 
 #import "DWAppDelegate.h"
 #import "DWUser.h"
+#import "DWConstans.h"
 
 @implementation DWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Parse setApplicationId:@"AdjsaKpwMwHa7HQXWmGD99WeByDQWrxkcoNhqitg" clientKey:@"QUvkZk32EPnrll3mFBghAsb1Y3DRy2AeDsW7Z9af"];   
+    [Parse setApplicationId:@"AdjsaKpwMwHa7HQXWmGD99WeByDQWrxkcoNhqitg" clientKey:@"QUvkZk32EPnrll3mFBghAsb1Y3DRy2AeDsW7Z9af"];
+    
+   
+    if (![[NSUserDefaults standardUserDefaults]  objectForKey:searchRadius])
+    {
+        [[NSUserDefaults standardUserDefaults] setFloat:1.0 forKey:searchRadius];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+
+    if (![[NSUserDefaults standardUserDefaults]  objectForKey:refreshTime])
+    {
+        [[NSUserDefaults standardUserDefaults] setFloat:5.0 forKey:refreshTime];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
     
     return YES;
 }
