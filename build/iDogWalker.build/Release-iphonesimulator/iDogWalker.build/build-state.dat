@@ -1,0 +1,952 @@
+TiDogWalker
+v6
+r1
+cCheck dependencies
+cProcessPCH /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.pch iDogWalker/iDogWalker-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker normal i386
+cCpResource default.gpx build/Release-iphonesimulator/iDogWalker.app/default.gpx
+cCopyStringsFile /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/en.lproj/InfoPlist.strings iDogWalker/en.lproj/InfoPlist.strings
+cCompileStoryboard /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Base.lproj/Main.storyboard
+cCompileAssetCatalog /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Images.xcassets
+cProcessInfoPlistFile /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Info.plist /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Info.plist
+cGenerateDSYMFile /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app.dSYM /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker
+cTouch /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c0000000053E3DFFF00000000000003B4
+t1407442943
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053E3E00C000000000000019E
+t1407442956
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AdSupport.framework/AdSupport
+c0000000053E3E00E0000000000008CC0
+t1407442958
+s36032
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c0000000053E3E00F0000000000904120
+t1407442959
+s9453856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c0000000053E3E00F000000000058E0E0
+t1407442959
+s5824736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c0000000053E3E00F00000000000FB140
+t1407442959
+s1028416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000053E3E0100000000000446820
+t1407442960
+s4483104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c0000000053E3E01000000000000F1A80
+t1407442960
+s989824
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000053E3E013000000000088D8C0
+t1407442963
+s8968384
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c0000000053E3E01400000000002E6B60
+t1407442964
+s3042144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c0000000053E3E01500000000001BE790
+t1407442965
+s1828752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c0000000053E3E016000000000048F720
+t1407442966
+s4781856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Security.framework/Security
+c0000000053E3E016000000000013FD70
+t1407442966
+s1310064
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/StoreKit.framework/StoreKit
+c0000000053E3E018000000000006E450
+t1407442968
+s451664
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c0000000053E3E01800000000001081C0
+t1407442968
+s1081792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000053E3E01C0000000001F1DE10
+t1407442972
+s32628240
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libz.dylib
+c0000000053E3E040000000000002B700
+t1407443008
+s177920
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000053E3E0700000000000000ADC
+t1407443056
+s2780
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/FacebookSDK.framework/FacebookSDK
+c0000000053E27AB50000000001C451EC
+t1407351477
+s29643244
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app
+t1410197233
+s340
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app.dSYM
+t2
+s0
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Base.lproj/Main.storyboardc
+t1410197233
+s578
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Info.plist
+t1410197233
+s931
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/PkgInfo
+t1410197233
+s8
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/default.gpx
+t1410197228
+s391
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/en.lproj/InfoPlist.strings
+t1410197227
+s42
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker
+t1410197227
+s3294680
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.o
+t1410197226
+s67608
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.o
+t1410197227
+s66144
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.o
+t1410197225
+s8796
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.o
+t1410197226
+s7488
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.o
+t1410197226
+s8928
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.o
+t1410197227
+s27036
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.o
+t1410197226
+s98476
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.o
+t1410197226
+s9340
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.o
+t1410197226
+s111580
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.o
+t1410197227
+s56456
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.o
+t1410197226
+s68040
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.o
+t1410197227
+s67824
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.o
+t1410197226
+s55948
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.o
+t1410197227
+s8280
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.o
+t1410197226
+s50048
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.o
+t1410197226
+s54484
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/iDogWalker.LinkFileList
+c00000000540DE6E500000000000009C9
+t1410197221
+s2505
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.o
+t1410197226
+s3756
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/assetcatalog_dependencies.txt
+t1410197230
+s378
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/assetcatalog_generated_info.plist
+t1410197230
+s525
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/default.gpx
+c0000000053FF9C210000000000000187
+t1409260577
+s391
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Base.lproj/Main.storyboard
+c00000000540DC375000000000000DEA8
+t1410188149
+s57000
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.m
+c00000000540A17C20000000000000AC8
+t1409947586
+s2760
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.m
+c00000000540DBDF70000000000000B49
+t1410186743
+s2889
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.m
+c0000000054088DCB000000000000015B
+t1409846731
+s347
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.m
+c00000000540DB5A7000000000000047E
+t1410184615
+s1150
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.m
+c00000000540494CF000000000000018E
+t1409586383
+s398
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.m
+c00000000540DD1550000000000000B65
+t1410191701
+s2917
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.m
+c00000000540DE0C00000000000002940
+t1410195648
+s10560
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.m
+c0000000054009925000000000000029F
+t1409325349
+s671
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.m
+c00000000540DD2EB0000000000002199
+t1410192107
+s8601
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.m
+c00000000540DAF6B0000000000000C1C
+t1410183019
+s3100
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.m
+c00000000540A17FB0000000000000A67
+t1409947643
+s2663
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.m
+c00000000540DC3CF0000000000000D5E
+t1410188239
+s3422
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.m
+c000000005404B9FF00000000000002A5
+t1409595903
+s677
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.m
+c0000000054088DCB00000000000001A8
+t1409846731
+s424
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.m
+c00000000540DDAC30000000000002299
+t1410194115
+s8857
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.m
+c000000005409FA8500000000000009D2
+t1409940101
+s2514
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/FacebookSDK
+c0000000053E27AB50000000001C451EC
+t1407351477
+s29643244
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Images.xcassets
+c000000005406194300000000000001FE
+t1409685827
+s510
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Parse
+c0000000053C42C460000000001FB389C
+t1405365318
+s33241244
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/en.lproj/InfoPlist.strings
+c0000000053F77632000000000000002D
+t1408726578
+s45
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Info.plist
+c000000005408C3040000000000000452
+t1409860356
+s1106
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Prefix.pch
+c000000005408662000000000000001A6
+t1409836576
+s422
+
+N/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/main.m
+c0000000053F77632000000000000015F
+t1408726578
+s351
+
+N/var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.pch
+t1410197225
+s507432
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies83c35b651ebeb941^371ae0651ebeb941^---0#1#1#--18"Check dependencies36"242A39C9-AFDB-47D6-91CE-8D1837E0B697-
+
+CCompileAssetCatalog /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Images.xcassets
+s431890028.025193
+e431890030.513065
+r1
+xCompileAssetCatalog
+x/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Images.xcassets
+o/* com.apple.actool.compilation-results */
+o/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/LaunchImage-700-568h@2x.png
+o/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Assets.car
+o/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/assetcatalog_generated_info.plist
+o
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"[1mCompileAssetCatalog[0m build/Release-iphonesimulator/iDogWalker.app [1miDogWalker/Images.xcassets[0m107"[1mCompileAssetCatalog[0m build/Release-iphonesimulator/iDogWalker.app [1miDogWalker/Images.xcassets[0mdf8c066c1ebeb941^6e6b836e1ebeb941^-406"/* com.apple.actool.compilation-results *//Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/LaunchImage-700-568h@2x.png/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Assets.car/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@79"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Images.xcassets/0000000000000000^1204"[1mCompileAssetCatalog[0m build/Release-iphonesimulator/iDogWalker.app [1miDogWalker/Images.xcassets[0m    cd /Users/alejandrotami/MobileMakers/iDogWalker    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphonesimulator --minimum-deployment-target 7.1 --target-device iphone --compress-pngs --compile /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Images.xcassets36"14D7FBB5-4116-4061-B293-FC7929DDAD20-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.672817
+e431890026.824588
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.m243"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.o [1miDogWalker/DWAddDoggieViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0360ac6a1ebeb941^e350d36a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.m0000000000000000^3931"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.o [1miDogWalker/DWAddDoggieViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.o36"BA5D3448-C16B-4438-A8C0-D661837523A0-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.891661
+e431890027.017754
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.m219"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.o [1miDogWalker/DWAppDelegate.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd385e46a1ebeb941^849f046b1ebeb941^---0#0#1#-19%DVTDocumentLocation2@78"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.m0000000000000000^3859"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.o [1miDogWalker/DWAppDelegate.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.o36"221168A1-F48A-4745-9D17-2779AB9AD7E3-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890025.551861
+e431890025.936228
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.m211"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.o [1miDogWalker/DWCheckIn.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler18798d691ebeb941^64afef691ebeb941^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.m0000000000000000^3835"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.o [1miDogWalker/DWCheckIn.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.o36"45E01239-34D3-4812-BB9A-3EF943D6E83F-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.819141
+e431890026.890432
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.m213"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.o [1miDogWalker/DWConstans.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0fd0d16a1ebeb941^2afee36a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.m0000000000000000^3841"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.o [1miDogWalker/DWConstans.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.o36"9ECE885C-3EEC-45EB-B47E-41D49F1A6C54-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.407912
+e431890026.483897
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.m203"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.o [1miDogWalker/DWDog.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9b8e686a1ebeb941^cff77b6a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.m0000000000000000^3811"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.o [1miDogWalker/DWDog.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.o36"364A87B4-373B-4156-B8A8-6A08A397D1B7-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890027.018227
+e431890027.175793
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.m223"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.o [1miDogWalker/DWDogOperations.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler36c8046b1ebeb941^a12b2d6b1ebeb941^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.m0000000000000000^3871"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.o [1miDogWalker/DWDogOperations.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.o36"9B1431DC-AE2A-4706-AFD6-CF5A0C210E30-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890025.553213
+e431890026.221470
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.m231"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.o [1miDogWalker/DWMapViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1bbe8d691ebeb941^69c8386a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.m0000000000000000^3895"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.o [1miDogWalker/DWMapViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.o36"7E702EE6-134D-4713-811D-D75DAF9AC399-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.282789
+e431890026.365024
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.m217"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.o [1miDogWalker/DWOperations.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc191486a1ebeb941^5e805d6a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@77"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.m0000000000000000^3853"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.o [1miDogWalker/DWOperations.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.o36"AA72FA7B-1387-4DC4-BB2B-48200856647B-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.484287
+e431890026.818780
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAddDoggieViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.m239"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.o [1miDogWalker/DWProfileViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler55327c6a1ebeb941^36ead16a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.m0000000000000000^3919"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.o [1miDogWalker/DWProfileViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProfileViewController.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.o36"C9727DC4-F3CA-46CB-A8DF-2E935BE63282-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890027.034560
+e431890027.176396
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDogOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.m235"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.o [1miDogWalker/DWProtoViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercff6086b1ebeb941^7a8d2d6b1ebeb941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.m0000000000000000^3907"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.o [1miDogWalker/DWProtoViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.o36"2BBC722D-E0C6-40D2-9988-288F59B1DAA1-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.366090
+e431890026.537404
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.m249"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.o [1miDogWalker/DWRegistrationViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7bda5d6a1ebeb941^1d93896a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.m0000000000000000^3949"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.o [1miDogWalker/DWRegistrationViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWRegistrationViewController.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.o36"0B7F5CE9-3162-4EE3-88F8-46AED846C6F3-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.824921
+e431890027.033867
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.m241"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.o [1miDogWalker/DWSettingsViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbf49d36a1ebeb941^030a096b1ebeb941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.m0000000000000000^3925"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.o [1miDogWalker/DWSettingsViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWSettingsViewController.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.o36"F4AC3952-3331-46BC-A694-1C055A4D2C0D-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.538682
+e431890026.672454
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWDog.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.m223"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.o [1miDogWalker/DWTableViewCell.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9a058a6a1ebeb941^0070ac6a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.m0000000000000000^3871"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.o [1miDogWalker/DWTableViewCell.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWTableViewCell.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.o36"A16C5762-8860-4282-B696-37B66F37FCC7-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890027.176725
+e431890027.277148
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.m205"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.o [1miDogWalker/DWUser.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera25d2d6b1ebeb941^0c02476b1ebeb941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.m0000000000000000^3817"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.o [1miDogWalker/DWUser.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.o36"155D6680-B5A6-4BBF-923E-4BA2A6A0EA44-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.013792
+e431890026.282323
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWCheckIn.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.m225"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.o [1miDogWalker/DWUserOperations.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera5a4036a1ebeb941^749b486a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.m0000000000000000^3877"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.o [1miDogWalker/DWUserOperations.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.o36"C76CDDB5-D28B-4250-B01C-7F04EFD5C4FA-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890026.221943
+e431890026.407165
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWProtoViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWOperations.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWMapViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUserOperations.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.m225"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.o [1miDogWalker/DWViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler95f0386a1ebeb941^d13c686a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.m0000000000000000^3877"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.o [1miDogWalker/DWViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWViewController.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.o36"9C77AA5B-957B-431B-BBEE-4D6C87C22D43-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileC build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.o /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890025.936601
+e431890026.013429
+r1
+xCompileC
+xbuild/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.o
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/main.m
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWAppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/main.m201"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.o [1miDogWalker/main.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercde8ef691ebeb941^d57a036a1ebeb941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/main.m0000000000000000^3805"[1mCompileC[0m build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.o [1miDogWalker/main.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -include /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch -MMD -MT dependencies -MF /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.dia -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/main.m -o /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.o36"5A38B870-2574-49D1-B5B8-F21EF85CCEB4-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCompileStoryboard /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Base.lproj/Main.storyboard
+s431890028.023345
+e431890033.254776
+r1
+xCompileStoryboard
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Base.lproj/Main.storyboard
+onwi_state: registration failed (1000000)
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"[1mCompileStoryboard[0m [1miDogWalker/Base.lproj/Main.storyboard[0m71"[1mCompileStoryboard[0m [1miDogWalker/Base.lproj/Main.storyboard[0ma915066c1ebeb941^0c3a41711ebeb941^-41"nwi_state: registration failed (1000000)-0#0#1#-19%DVTDocumentLocation2@89"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Base.lproj/Main.storyboard0000000000000000^909"[1mCompileStoryboard[0m [1miDogWalker/Base.lproj/Main.storyboard[0m    cd /Users/alejandrotami/MobileMakers/iDogWalker    export IBSC_MINIMUM_COMPATIBILITY_VERSION=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.1 --output-format human-readable-text --compile /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Base.lproj/Main.storyboardc /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Base.lproj/Main.storyboard36"AD6E6F92-7758-4568-AF59-1896CB6115C1-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCopyStringsFile /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/en.lproj/InfoPlist.strings iDogWalker/en.lproj/InfoPlist.strings
+s431890027.913677
+e431890028.022359
+r1
+xCopyStringsFile
+x/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/en.lproj/InfoPlist.strings
+xiDogWalker/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Copy iDogWalker/en.lproj/InfoPlist.strings133"[1mCopyStringsFile[0m build/Release-iphonesimulator/iDogWalker.app/en.lproj/InfoPlist.strings iDogWalker/en.lproj/InfoPlist.stringsbef9e96b1ebeb941^edbc056c1ebeb941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/en.lproj/InfoPlist.strings0000000000000000^645"[1mCopyStringsFile[0m build/Release-iphonesimulator/iDogWalker.app/en.lproj/InfoPlist.strings iDogWalker/en.lproj/InfoPlist.strings    cd /Users/alejandrotami/MobileMakers/iDogWalker    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/en.lproj -- iDogWalker/en.lproj/InfoPlist.strings36"F3274836-15F9-45C6-BAC1-420B21203338-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CCpResource default.gpx build/Release-iphonesimulator/iDogWalker.app/default.gpx
+s431890027.913163
+e431890028.022333
+r1
+xCpResource
+xdefault.gpx
+xbuild/Release-iphonesimulator/iDogWalker.app/default.gpx
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Release-iphonesimulator/iDogWalker.app/default.gpx87"[1mCpResource[0m default.gpx build/Release-iphonesimulator/iDogWalker.app/default.gpx51dce96b1ebeb941^d1ca056c1ebeb941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/default.gpx0034b0d3ddffdf42^754"[1mCpResource[0m default.gpx build/Release-iphonesimulator/iDogWalker.app/default.gpx    cd /Users/alejandrotami/MobileMakers/iDogWalker    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/alejandrotami/MobileMakers/iDogWalker/default.gpx /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app36"9AA92293-8B7A-41EB-B612-A0FC5C555A9D-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CGenerateDSYMFile /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app.dSYM /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker
+s431890033.258885
+e431890033.563817
+r1
+xGenerateDSYMFile
+x/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app.dSYM
+x/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Generate /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app.dSYM138"[1mGenerateDSYMFile[0m [1mbuild/Release-iphonesimulator/iDogWalker.app.dSYM[0m build/Release-iphonesimulator/iDogWalker.app/iDogWalkerbc5a42711ebeb941^ea7890711ebeb941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app.dSYM0034b0d3ddffdf42^719"[1mGenerateDSYMFile[0m [1mbuild/Release-iphonesimulator/iDogWalker.app.dSYM[0m build/Release-iphonesimulator/iDogWalker.app/iDogWalker    cd /Users/alejandrotami/MobileMakers/iDogWalker    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker -o /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app.dSYM36"2086DB8B-3747-4D6E-A94B-D25E0EE9A97C-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CLd /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker normal i386
+s431890027.279431
+e431890027.911761
+r1
+xLd
+x/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker
+xnormal
+xi386
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/iDogWalker.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWCheckIn.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWMapViewController.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/main.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUserOperations.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWViewController.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWOperations.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWRegistrationViewController.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDog.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProfileViewController.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWTableViewCell.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAddDoggieViewController.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWConstans.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWSettingsViewController.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWAppDelegate.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWDogOperations.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWProtoViewController.o
+d/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/DWUser.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AdSupport.framework/AdSupport
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/FacebookSDK
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libz.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/StoreKit.framework/StoreKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Parse
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Accounts.framework/Accounts
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Link /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker78"[1mLd[0m build/Release-iphonesimulator/iDogWalker.app/iDogWalker normal i3863ca1476b1ebeb941^c87be96b1ebeb941^---0#0#1#--1869"[1mLd[0m build/Release-iphonesimulator/iDogWalker.app/iDogWalker normal i386    cd /Users/alejandrotami/MobileMakers/iDogWalker    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker -filelist /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/iDogWalker.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.1 -framework MapKit -framework AdSupport -framework AudioToolbox -framework CFNetwork -framework CoreAudio -framework FacebookSDK -framework CoreLocation -lz -framework MobileCoreServices -framework QuartzCore -framework Security -framework StoreKit -framework SystemConfiguration -framework CoreGraphics -framework UIKit -framework FacebookSDK -framework Parse -framework Foundation -Xlinker -dependency_info -Xlinker /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/Objects-normal/i386/iDogWalker_dependency_info.dat -o /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/iDogWalker36"1C075A94-06D2-4EF2-BAE0-CB5519E65810-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CProcessInfoPlistFile /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Info.plist /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Info.plist
+s431890033.255779
+e431890033.258125
+r1
+xProcessInfoPlistFile
+x/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Info.plist
+x/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Process /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Info.plist125"[1mProcessInfoPlistFile[0m build/Release-iphonesimulator/iDogWalker.app/Info.plist [1miDogWalker/iDogWalker-Info.plist[0mcd9141711ebeb941^121542711ebeb941^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Info.plist0000000000000000^956"[1mProcessInfoPlistFile[0m build/Release-iphonesimulator/iDogWalker.app/Info.plist [1miDogWalker/iDogWalker-Info.plist[0m    cd /Users/alejandrotami/MobileMakers/iDogWalker    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Info.plist -genpkginfo /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/assetcatalog_generated_info.plist -o /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app/Info.plist36"85662CA3-D8AE-4A5E-9ED3-E2733A1DFF3B-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CProcessPCH /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.pch iDogWalker/iDogWalker-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s431890021.874206
+e431890025.550333
+r1
+xProcessPCH
+x/var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.pch
+xiDogWalker/iDogWalker-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Prefix.pch
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/Parse.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFACL.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFAnalytics.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFUser.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFConstants.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFObject.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFSubclassing.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFCloud.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFFile.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFGeoPoint.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFQuery.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFRelation.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFRole.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFImageView.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFInstallation.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFLogInViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFLogInView.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFSignUpView.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFProduct.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFTableViewCell.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFPurchase.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFPush.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PF_Twitter.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBSession.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBSDKMacros.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBLinkShareParams.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBOpenGraphActionParams.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBPhotoParams.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBError.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBGraphPerson.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBPeoplePickerViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBGraphObjectPickerViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBLikeControl.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBTooltipView.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBShareDialogPhotoParams.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBTaggableFriendPickerViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFFacebookUtils.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWUser.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/Parse.framework/Headers/PFObject+Subclass.h
+d/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/DWConstans.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile iDogWalker/iDogWalker-Prefix.pch310"[1mProcessPCH[0m /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.pch iDogWalker/iDogWalker-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb405e0651ebeb941^b8e48c691ebeb941^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Prefix.pch0000000000000000^3901"[1mProcessPCH[0m /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.pch iDogWalker/iDogWalker-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alejandrotami/MobileMakers/iDogWalker    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-generated-files.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-own-target-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-all-target-headers.hmap -iquote /Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/iDogWalker-project-headers.hmap -I/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources/i386 -I/Users/alejandrotami/MobileMakers/iDogWalker/build/iDogWalker.build/Release-iphonesimulator/iDogWalker.build/DerivedSources -F/Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator -F/Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker -F/Users/alejandrotami/MobileMakers/iDogWalker --serialize-diagnostics /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.d -c /Users/alejandrotami/MobileMakers/iDogWalker/iDogWalker/iDogWalker-Prefix.pch -o /var/folders/wc/1rlqspz14mx4m0pk8r0_q5900000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/iDogWalker-Prefix-arkwjzhryiuuzweyzhljspdmstgc/iDogWalker-Prefix.pch.pch36"A795224C-C970-4D1F-A574-F18DE6A4B5C9-
+b86BBA290-7B8B-4A80-A11E-3011B1C7DC74
+
+CTouch /Users/alejandrotami/MobileMakers/iDogWalker/build/Release-iphonesimulator/iDogWalker.app
+r0
+

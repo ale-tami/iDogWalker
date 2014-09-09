@@ -48,6 +48,12 @@
     self.navigationController.navigationBarHidden = NO;
     
 }
+- (IBAction)onTwLogin:(UIButton *)sender
+{
+    [DWUserOperations sharedInstance].delegate = self;
+    
+    [[DWUserOperations sharedInstance] twitterLogin];
+}
 
 - (IBAction)onFbLogin:(UIButton *)sender
 {
@@ -62,18 +68,7 @@
 
     [[DWUserOperations sharedInstance] loginUser:self.emailField.text andPassword:self.passwordField.text];
     
-//    DWUser * user = [DWUser logInWithUsername:self.emailField.text password:self.passwordField.text];
-//    if (!user) {
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Nope"
-//                                                        message:@"Wrong user/password"
-//                                                       delegate:self
-//                                              cancelButtonTitle:@"Bummer... ok"
-//                                              otherButtonTitles:nil];
-//        [alert show];
-//        
-//    } else {
-//        [self performSegueWithIdentifier:@"toApp" sender:self];
-//    }
+
 }
 
 - (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error

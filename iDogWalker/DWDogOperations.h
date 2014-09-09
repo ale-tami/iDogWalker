@@ -16,6 +16,7 @@
 - (void) saveDog:(NSString*)name age: (NSNumber*)age race:(NSString*) race profileImage:(UIImage*) image;
 - (void) getDogs:(DWUser*) owner;
 - (void) saveDoggieModifications: (DWDog *)doggie;
+- (void) deleteDoggie: (DWDog *)doggie;
 - (BOOL) userHasDogsInNeed: (DWUser*) owner; //WARNING this method does not use delegate
 
 @end

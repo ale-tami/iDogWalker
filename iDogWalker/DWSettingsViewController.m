@@ -38,6 +38,7 @@
     [self.uDefaults setFloat:self.searchRadiousSlider.value forKey:searchRadius];
     [self.uDefaults setFloat:self.mapRefreshTimeSlider.value forKey:refreshTime];
     [self.uDefaults synchronize];
+    [self performSegueWithIdentifier:@"unwindSegue" sender:self];
 }
 
 - (IBAction)onCancel:(id)sender

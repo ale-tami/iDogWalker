@@ -74,6 +74,15 @@ static DWDogOperations *operations = nil;
     }];
 }
 
+- (void) deleteDoggie: (DWDog *)doggie
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+    
+    [doggie deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+        
+    }];
+}
 
 /* This method does not use delegate */
 

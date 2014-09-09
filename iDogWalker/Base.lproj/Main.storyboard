@@ -132,6 +132,9 @@
                                 <state key="normal" image="twitter_login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTwLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i8b-TI-vaW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -519,7 +522,7 @@
                                         </state>
                                         <connections>
                                             <action selector="onCancel:" destination="FAi-up-Vyt" eventType="touchUpInside" id="wzn-Gv-Lck"/>
-                                            <segue destination="Vlf-fA-tkf" kind="unwind" unwindAction="unwindSegue:" id="VsT-Go-hC9"/>
+                                            <segue destination="Vlf-fA-tkf" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegue:" id="VsT-Go-hC9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="YzC-6u-XGP">
@@ -614,6 +617,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="YRM-ad-0ll"/>
+        <segue reference="bVD-Gj-YGz"/>
     </inferredMetricsTieBreakers>
 </document>

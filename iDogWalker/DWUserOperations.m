@@ -25,6 +25,52 @@ static DWUserOperations *operations = nil;
     }
 }
 
+- (void) twitterLogin
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+
+    [PFTwitterUtils logInWithBlock:^(PFUser *user, NSError *error) {
+        if (!error) {
+            
+            NSString * requestString = [NSString stringWithFormat:@"https://api.twitter.com/1.1/users/show.json?screen_name=%@", [PFTwitterUtils twitter].screenName ];
+            
+            
+            NSURL *verify = [NSURL URLWithString:requestString];
+            NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:verify];
+            [[PFTwitterUtils twitter] signRequest:request];
+            NSURLResponse *response = nil;
+            NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                                 returningResponse:&response
+                                                             error:&error];
+            
+            
+            if ( error == nil){
+                NSDictionary* result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+         
+                
+                NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[result objectForKey:@"profile_image_url_https"] ]];
+                [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                    
+                    PFFile *file = [PFFile fileWithData:data];
+                    [DWUser currentUser].profileImage = file;
+                    
+                    [DWUser currentUser].username = [PFTwitterUtils twitter].screenName;
+                    
+                    
+                    [[DWUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+                        
+                    }];
+                    
+                }];
+
+                
+            }
+        
+        }
+        
+    }];
+}
 
 
 
@@ -104,7 +150,7 @@ static DWUserOperations *operations = nil;
     }];
 }
 
-- (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates
+- (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates withVisibility: (BOOL) visible
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
     
@@ -122,7 +168,7 @@ static DWUserOperations *operations = nil;
     //DWCheckIn *checkIn = [DWCheckIn object];
         checkIn.location = [PFGeoPoint geoPointWithLatitude:coordinates.latitude longitude:coordinates.longitude];
         
-        [DWUser currentUser].visibile = YES;
+        [DWUser currentUser].visibile = visible;
         checkIn.user = [DWUser currentUser];
         
         [checkIn saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
@@ -181,6 +227,8 @@ static DWUserOperations *operations = nil;
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
 
+    float searchRad = [[[NSUserDefaults standardUserDefaults] objectForKey:searchRadius] floatValue];
+   
     PFQuery *query = [PFQuery queryWithClassName:[DWCheckIn parseClassName]];
     [query setLimit:100];
     [query includeKey:@"user"];
@@ -188,7 +236,7 @@ static DWUserOperations *operations = nil;
     [query whereKey:@"location" nearGeoPoint:
     [PFGeoPoint geoPointWithLatitude:coordinate.latitude
                            longitude:coordinate.longitude]
-                    withinKilometers:[[NSUserDefaults standardUserDefaults] floatForKey:searchRadius] ];
+                    withinKilometers: searchRad ];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         [self.delegate operationCompleteFromOperation:self withObjects:objects withError: error];
@@ -231,6 +279,32 @@ static DWUserOperations *operations = nil;
     }];
     
   
+}
+
+-(void) postToTwitterWall: (NSString *) name
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NotifyOperation" object:self];
+    
+    NSString *bodyString = [NSString stringWithFormat:@"status= %@", name];
+    
+    bodyString = [bodyString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    
+    NSURL *requestURL = [NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/update.json"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestURL];
+    request.HTTPMethod = @"POST";
+    
+    request.HTTPBody = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
+        [[PFTwitterUtils twitter] signRequest:request];
+        
+        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+            [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+            
+        }];
+    });
+    
+    
 }
 
 @end

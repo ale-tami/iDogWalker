@@ -72,9 +72,18 @@ static void * UserPropertyKey = &UserPropertyKey;
         self.checkInButton.title = checkOutButton;
     }
 
-    [self annotatePeople];
-
+    MKCoordinateSpan coordinateSpan;
+    coordinateSpan.latitudeDelta = regionCoordinateSpan;
+    coordinateSpan.longitudeDelta = regionCoordinateSpan;
+    MKCoordinateRegion region;
+    region.center = self.mapView.userLocation.coordinate;
+    region.span = coordinateSpan;
+    
+    [self.mapView setRegion:region animated:YES];
     self.navigationItem.hidesBackButton = YES;
+    
+    self.mapView.showsUserLocation = NO;
+    self.mapView.showsUserLocation = YES;
 
 
 }
@@ -104,41 +113,36 @@ static void * UserPropertyKey = &UserPropertyKey;
 - (void) imageForPin: (MKAnnotationView*) pin andUser:(DWUser *) user
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
+
+   
         CGSize size = pin.frame.size;
         
-        NSData *dataForImage = user.profileImage.getData;
+     //   NSData *dataForImage = user.profileImage.getData;
         
         BOOL needsHeart = [[DWDogOperations sharedInstance] userHasDogsInNeed:user];
         
         PFImageView *imageView = [PFImageView new];
         
-        
         if (needsHeart) {
-         //   pin.image = [UIImage imageNamed:@"heartFilled"];
              imageView.image = [UIImage imageNamed:heartFilled];
-        }else {
-        //    pin.image = [UIImage imageWithData:dataForImage];
-            imageView.image = [UIImage imageWithData:dataForImage];
+        } else if (!user.profileImage) {
+            imageView.image = [UIImage imageNamed:placeholder];;
+        } else {
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
+                imageView.file = user.profileImage;
+                [imageView loadInBackground];
+            });
         }
         
-        if (!dataForImage) {
-         //   pin.image = [UIImage imageNamed:@"placeholder"];
-            imageView.image = [UIImage imageNamed:placeholder];
-        }
-//        
-//        pin.contentMode = UIViewContentModeScaleAspectFit;
-//        pin.frame = CGRectMake(pin.frame.origin.x,
-//                               pin.frame.origin.y,
-//                               size.width,
-//                               size.height);
+        
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.frame = CGRectMake(imageView.frame.origin.x,
                                      imageView.frame.origin.y -3,
                                      size.width,
                                      size.height);
         
-       // imageView.layer.borderColor = [[UIColor blueColor] CGColor];
-      //  imageView.layer.borderWidth = 0.5;
+
         imageView.layer.cornerRadius = avatarCornerRadius;
         imageView.layer.masksToBounds = YES;
         [UIView animateWithDuration:1.0 animations:^{
@@ -152,16 +156,12 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 - (void) annotatePeople
 {
- //   if (self.isCheckedIn) {
-      //  [self startBlockeage];
-
         [[DWUserOperations sharedInstance] getNerbyWalkers:self.mapView.userLocation.coordinate];
-   // }
 }
 
 - (void) executeUpdate
 {
-    [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
+    [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate withVisibility:self.isCheckedIn];
     
     [self annotatePeople];
     
@@ -212,15 +212,32 @@ static void * UserPropertyKey = &UserPropertyKey;
     
 }
 
+- (void) reverseGeocodingAndPostToTwitter
+{
+    
+    CLGeocoder *geocoder = [CLGeocoder new];
+    
+    [geocoder reverseGeocodeLocation:self.mapView.userLocation.location completionHandler:^(NSArray *placemarks, NSError *error){
+        
+        [[DWUserOperations sharedInstance] postToTwitterWall:((CLPlacemark*)[placemarks firstObject]).name ];
+        
+    }];
+    
+}
+
+
 #pragma mark -- IBActions
 - (IBAction)onCheckIn:(UIBarButtonItem *)sender
 {
     if (!self.isCheckedIn) {
-        [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate];
+        [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate withVisibility:self.isCheckedIn];
         
         if ([PFFacebookUtils isLinkedWithUser:[PFUser currentUser]])
         {
             [self reverseGeocodingAndPostToFacebook];
+            
+        } else if ([PFTwitterUtils isLinkedWithUser:[PFUser currentUser]]) {
+            [self reverseGeocodingAndPostToTwitter];
         }
         
         
@@ -272,14 +289,6 @@ static void * UserPropertyKey = &UserPropertyKey;
     pin.canShowCallout = YES;
     
     if (annotation == mapView.userLocation) {
-        MKCoordinateSpan coordinateSpan;
-        coordinateSpan.latitudeDelta = regionCoordinateSpan;
-        coordinateSpan.longitudeDelta = regionCoordinateSpan;
-        MKCoordinateRegion region;
-        region.center = mapView.userLocation.coordinate;
-        region.span = coordinateSpan;
-        
-        [self.mapView setRegion:region animated:YES];
         
         ((MKPointAnnotation*)pin.annotation).title = userPinTitle;
         

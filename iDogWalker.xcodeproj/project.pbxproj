@@ -41,6 +41,8 @@
 		4DAB871419A7B8E200388180 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870919A7B8E200388180 /* StoreKit.framework */; };
 		4DAB871519A7B8E200388180 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB870A19A7B8E200388180 /* SystemConfiguration.framework */; };
 		4DAB871719A7B90700388180 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB871619A7B90700388180 /* FacebookSDK.framework */; };
+		4DAFC10D19BF39F500A184CD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAFC10C19BF39F500A184CD /* Social.framework */; };
+		4DAFC10F19BF3A0600A184CD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAFC10E19BF3A0600A184CD /* Accounts.framework */; };
 		4DB62AFD19ABD71D00A595C2 /* DWRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62AFC19ABD71D00A595C2 /* DWRegistrationViewController.m */; };
 		4DB62B0119ABDCD700A595C2 /* DWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0019ABDCD700A595C2 /* DWUser.m */; };
 		4DB62B0419ACC39200A595C2 /* DWUserOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0319ACC39200A595C2 /* DWUserOperations.m */; };
@@ -108,6 +110,8 @@
 		4DAB870919A7B8E200388180 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4DAB870A19A7B8E200388180 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4DAB871619A7B90700388180 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		4DAFC10C19BF39F500A184CD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4DAFC10E19BF3A0600A184CD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4DB62AFB19ABD71D00A595C2 /* DWRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWRegistrationViewController.h; sourceTree = "<group>"; };
 		4DB62AFC19ABD71D00A595C2 /* DWRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWRegistrationViewController.m; sourceTree = "<group>"; };
 		4DB62AFF19ABDCD700A595C2 /* DWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWUser.h; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DAFC10F19BF3A0600A184CD /* Accounts.framework in Frameworks */,
+				4DAFC10D19BF39F500A184CD /* Social.framework in Frameworks */,
 				4DB62B0919ACE1D000A595C2 /* MapKit.framework in Frameworks */,
 				4DAB870B19A7B8E200388180 /* AdSupport.framework in Frameworks */,
 				4DAB870C19A7B8E200388180 /* AudioToolbox.framework in Frameworks */,
@@ -190,6 +196,8 @@
 		4DAB86C819A7ADB200388180 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DAFC10E19BF3A0600A184CD /* Accounts.framework */,
+				4DAFC10C19BF39F500A184CD /* Social.framework */,
 				4DAA33C319B8FA4000873EEF /* FacebookSDK.framework */,
 				4DB62B0819ACE1D000A595C2 /* MapKit.framework */,
 				4DAB870019A7B8E200388180 /* AdSupport.framework */,

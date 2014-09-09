@@ -16,12 +16,14 @@
 + (instancetype) sharedInstance;
 
 - (void) facebookLogin;
+- (void) twitterLogin;
 - (void) loginUser: (NSString *) user andPassword:(NSString *) pass;
 - (void) saveUser:(NSString*)userName eMail: (NSString*)email password:(NSString*) password profileImage:(UIImage*) image;
-- (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates;
+- (void) checkInCurrentUser:(CLLocationCoordinate2D) coordinates withVisibility: (BOOL) visible;
 - (void) checkOutCurrentUser;
 - (void) getNerbyWalkers:(CLLocationCoordinate2D) coordinate;
 - (void) saveCurrentUserModifications;
 - (void) postToFacebookWall: (NSString *) name;
+- (void) postToTwitterWall: (NSString *) name;
 
 @end

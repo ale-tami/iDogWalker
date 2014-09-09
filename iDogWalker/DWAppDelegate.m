@@ -16,6 +16,9 @@
 {
     [Parse setApplicationId:@"AdjsaKpwMwHa7HQXWmGD99WeByDQWrxkcoNhqitg" clientKey:@"QUvkZk32EPnrll3mFBghAsb1Y3DRy2AeDsW7Z9af"];
     
+    [PFTwitterUtils initializeWithConsumerKey:@"yF7OkoQqyDeRQRimPXyNXSqGa"
+                               consumerSecret:@"w6N2AVMI8PaQMvF3zXxPe4lJS50txmBogf8nPJGXQGcZBYc8jq"];
+    
    
     if (![[NSUserDefaults standardUserDefaults]  objectForKey:searchRadius])
     {

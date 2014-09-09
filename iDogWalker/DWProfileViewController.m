@@ -25,7 +25,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) UIImagePickerController *imagePicker;
-@property NSArray* dogs;
+@property NSMutableArray* dogs;
 
 
 @end
@@ -58,19 +58,21 @@
     self.imagePicker.delegate = self;
     self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
-    [DWUserOperations sharedInstance].delegate = self;
-    [DWDogOperations sharedInstance].delegate = self;
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
+    [DWUserOperations sharedInstance].delegate = self;
+    [DWDogOperations sharedInstance].delegate = self;
+
+    
+    self.dogs = [NSMutableArray array];
+    
    // [self startBlockeage];
     [[DWDogOperations sharedInstance] getDogs:self.sentUser];
     
-    self.dogs = [NSArray array];
     
     [self.tableView reloadData];
     
@@ -83,7 +85,7 @@
         self.profileImage.image = [UIImage imageWithData: self.sentUser.profileImage.getData];
 
         if (!self.profileImage.image) {
-            self.profileImage.image = [UIImage imageNamed:@"placeholder"];
+            self.profileImage.image = [UIImage imageNamed:placeholder];
         }
         
     });
@@ -91,19 +93,17 @@
 
 - (void) imageForDogCell: (DWTableViewCell *) cell
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
-        
-        cell.image.layer.cornerRadius = 20;
-        cell.image.layer.masksToBounds = YES;
-   
-        NSData *dataForImage = cell.doggie.imageFile.getData;
-        cell.image.image = [UIImage imageWithData:dataForImage];
-        
-        
-        if (!dataForImage) {
-            cell.image.image = [UIImage imageNamed:@"placeholder"];
-        }
-    });
+    cell.image.layer.cornerRadius = 20;
+    cell.image.layer.masksToBounds = YES;
+
+    if (!cell.doggie.imageFile) {
+        cell.image.image = [UIImage imageNamed:placeholder];
+    } else {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
+            NSData *dataForImage = cell.doggie.imageFile.getData;
+            cell.image.image = [UIImage imageWithData:dataForImage];
+        });
+    }
 }
 
 
@@ -115,7 +115,7 @@
             [self performSegueWithIdentifier:@"unwindedSegue" sender:self];
         } else if ([operation isKindOfClass:[DWDogOperations class]]) {
             if (objects != nil ) {
-                self.dogs = (NSArray*)objects;
+                self.dogs = (NSMutableArray*)objects;
             }
             [self.tableView reloadData];
         }
@@ -187,7 +187,18 @@
     }
 }
 
+
+
 #pragma mark -- TableView DataSource
+
+- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [[DWDogOperations sharedInstance] deleteDoggie:[self.dogs objectAtIndex:indexPath.row - 1]];
+    
+    [self.dogs removeObjectAtIndex:indexPath.row - 1];
+    
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
