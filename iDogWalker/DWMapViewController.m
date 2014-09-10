@@ -63,8 +63,7 @@ static void * UserPropertyKey = &UserPropertyKey;
     [DWDogOperations sharedInstance].delegate = self;
     
     self.mapView.delegate = self;
-    self.mapView.showsUserLocation = YES;
-    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow];
+//    self.mapView.showsUserLocation = YES;
     
 //    self.uDefaults = [NSUserDefaults standardUserDefaults];
 //    self.isCheckedIn = [self.uDefaults boolForKey:isCheckedInPlist];
@@ -76,30 +75,31 @@ static void * UserPropertyKey = &UserPropertyKey;
         self.checkInButton.title = checkOutButton;
     }
     
+    self.mapView.showsUserLocation = NO;
+    self.mapView.showsUserLocation = YES;
+    
     MKCoordinateSpan coordinateSpan;
     coordinateSpan.latitudeDelta = regionCoordinateSpan;
     coordinateSpan.longitudeDelta = regionCoordinateSpan;
     MKCoordinateRegion region;
     region.center = self.mapView.userLocation.coordinate;
     region.span = coordinateSpan;
-    
     [self.mapView setRegion:region animated:YES];
+    
     self.navigationItem.hidesBackButton = YES;
     
-    self.mapView.showsUserLocation = NO;
-    self.mapView.showsUserLocation = YES;
-
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:[[[NSUserDefaults standardUserDefaults] objectForKey:refreshTime] floatValue] * 60
+                                                  target:self
+                                                selector:@selector(executeUpdate)
+                                                userInfo:nil repeats:YES];
 
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:[[[NSUserDefaults standardUserDefaults] objectForKey:refreshTime] floatValue] * 60
-                                                  target:self
-                                                selector:@selector(executeUpdate)
-                                                userInfo:nil repeats:YES];
+    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow];
+  
 }
 
 - (void) viewWillDisappear:(BOOL)animated
