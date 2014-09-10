@@ -43,7 +43,7 @@ static void * UserPropertyKey = &UserPropertyKey;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *checkInButton;
 
-@property BOOL isCheckedIn;
+//@property BOOL isCheckedIn;
 @property NSUserDefaults *uDefaults;
 @property NSString *stringForButton;
 @property NSTimer *timer;
@@ -66,12 +66,16 @@ static void * UserPropertyKey = &UserPropertyKey;
     self.mapView.showsUserLocation = YES;
     [self.mapView setUserTrackingMode:MKUserTrackingModeFollow];
     
-    self.uDefaults = [NSUserDefaults standardUserDefaults];
-    self.isCheckedIn = [self.uDefaults boolForKey:isCheckedInPlist];
-    if (self.isCheckedIn && ([(NSString*)[self.uDefaults objectForKey:userPlist] isEqualToString:[DWUser currentUser].email])) {
+//    self.uDefaults = [NSUserDefaults standardUserDefaults];
+//    self.isCheckedIn = [self.uDefaults boolForKey:isCheckedInPlist];
+//    if (self.isCheckedIn && ([(NSString*)[self.uDefaults objectForKey:userPlist] isEqualToString:[DWUser currentUser].username])) {
+//        self.checkInButton.title = checkOutButton;
+//    }
+    
+    if ([DWUser currentUser].visibile) {
         self.checkInButton.title = checkOutButton;
     }
-
+    
     MKCoordinateSpan coordinateSpan;
     coordinateSpan.latitudeDelta = regionCoordinateSpan;
     coordinateSpan.longitudeDelta = regionCoordinateSpan;
@@ -129,10 +133,12 @@ static void * UserPropertyKey = &UserPropertyKey;
             imageView.image = [UIImage imageNamed:placeholder];;
         } else {
             
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
+          //  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void) {
                 imageView.file = user.profileImage;
-                [imageView loadInBackground];
-            });
+                [imageView loadInBackground:^(UIImage *image, NSError *error) {
+                    
+                }];
+           // });
         }
         
         
@@ -161,13 +167,14 @@ static void * UserPropertyKey = &UserPropertyKey;
 
 - (void) executeUpdate
 {
-    [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate withVisibility:self.isCheckedIn];
+    [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate withVisibility:[DWUser currentUser].visibile];
     
     [self annotatePeople];
     
     NSLog(@"Executed");
 
 }
+
 
 - (void) operationCompleteFromOperation:(DWOperations*) operation withObjects:(NSObject *) objects withError:(NSError*) error
 {
@@ -229,8 +236,9 @@ static void * UserPropertyKey = &UserPropertyKey;
 #pragma mark -- IBActions
 - (IBAction)onCheckIn:(UIBarButtonItem *)sender
 {
-    if (!self.isCheckedIn) {
-        [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate withVisibility:self.isCheckedIn];
+    if (![DWUser currentUser].visibile)
+    {
+        [[DWUserOperations sharedInstance] checkInCurrentUser:self.mapView.userLocation.coordinate withVisibility:YES];
         
         if ([PFFacebookUtils isLinkedWithUser:[PFUser currentUser]])
         {
@@ -242,20 +250,20 @@ static void * UserPropertyKey = &UserPropertyKey;
         
         
         sender.title = checkOutButton;
-        self.isCheckedIn = YES;
+//        self.isCheckedIn = YES;
 
     } else {
         [[DWUserOperations sharedInstance] checkOutCurrentUser];
         sender.title = checkInButton;
-        self.isCheckedIn = NO;
+//        self.isCheckedIn = NO;
         //[self.mapView removeAnnotations:self.mapView.annotations];
 
     }
     
-    [self.uDefaults setBool:self.isCheckedIn forKey:isCheckedInPlist];
-    [self.uDefaults setValue:[DWUser currentUser].email  forKey:userPlist];
-
-    [self.uDefaults synchronize];
+//    [self.uDefaults setBool:self.isCheckedIn forKey:isCheckedInPlist];
+//    [self.uDefaults setValue:[DWUser currentUser].email  forKey:userPlist];
+//
+//    [self.uDefaults synchronize];
     
     [self annotatePeople];
 }

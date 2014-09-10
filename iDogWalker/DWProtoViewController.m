@@ -60,7 +60,7 @@ UIActivityIndicatorView *spinner = nil;
     }
     spinner.center = self.view.center;
     spinner.hidesWhenStopped = YES;
-    spinner.color = [UIColor blueColor];
+    spinner.color = [UIColor blackColor];
     
     [self.view addSubview:spinner];
     

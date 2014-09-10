@@ -467,6 +467,7 @@
         <!--Navigation Controller-->
         <scene sceneID="rkD-09-fmt">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oaj-ys-WGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="DiD-r2-ApJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qOC-tw-cNU">
@@ -482,27 +483,8 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="cI5-lZ-AVF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oaj-ys-WGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="590" y="-580"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2my-RE-Uhx">
-            <objects>
-                <viewController id="yI9-9q-dS9" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="E64-b9-2ug"/>
-                        <viewControllerLayoutGuide type="bottom" id="dqc-RK-bqF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="miN-NJ-f9P">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4d9-5y-Ebo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="252" y="-580"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J2i-7u-tqH">

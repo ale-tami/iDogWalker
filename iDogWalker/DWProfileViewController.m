@@ -240,9 +240,9 @@
         cell.name.text = dog.name;
         cell.race.text = dog.race;
         cell.age.text = [dog.age stringValue];
-       
-        [self imageForDogCell:cell];
         cell.doggie = dog;
+        
+        [self imageForDogCell:cell];
         
         if (self.sentUser == [DWUser currentUser]) {
             cell.loveButton.userInteractionEnabled = YES;
