@@ -274,7 +274,20 @@ static DWUserOperations *operations = nil;
                                                 HTTPMethod:@"POST"];
     
     [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-        [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+        
+        if (error)
+        {
+            [FBSession openActiveSessionWithReadPermissions:nil allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+                
+                 [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error)
+                 {
+                     [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+
+                 }];
+            }];
+        } else {
+            [self.delegate operationCompleteFromOperation:self withObjects:nil withError: error];
+        }
 
     }];
     
