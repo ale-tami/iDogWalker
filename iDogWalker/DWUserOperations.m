@@ -239,6 +239,11 @@ static DWUserOperations *operations = nil;
                     withinKilometers: searchRad ];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
+        NSLog(@"Objects %lu",(unsigned long)objects.count);
+        NSLog(@"Latitude %lu",(unsigned long)coordinate.latitude);
+        NSLog(@"Longitude %lu",(unsigned long)coordinate.longitude);
+
+        
         [self.delegate operationCompleteFromOperation:self withObjects:objects withError: error];
     }];
     

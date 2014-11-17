@@ -40,6 +40,7 @@ extern NSString *const refreshTime;
 
 extern NSString *const heartFilled;
 extern NSString *const placeholder;
+extern NSString *const appIconPlaceholder;
 extern NSString *const pinImage;
 
 @end

@@ -10,29 +10,29 @@
 	<string>iDogWalker</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1AB6270A-FCC6-4E21-B6B7-0DA677182A24</key>
+		<key>55A6CC76EEFC1F5728B5312528BEDB1716382CD5</key>
 		<string>https://github.com/ale-tami/iDogWalker.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iDogWalker.xcodeproj/project.xcworkspace</string>
+	<string>iDogWalker.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1AB6270A-FCC6-4E21-B6B7-0DA677182A24</key>
+		<key>55A6CC76EEFC1F5728B5312528BEDB1716382CD5</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/ale-tami/iDogWalker.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1AB6270A-FCC6-4E21-B6B7-0DA677182A24</string>
+	<string>55A6CC76EEFC1F5728B5312528BEDB1716382CD5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1AB6270A-FCC6-4E21-B6B7-0DA677182A24</string>
+			<string>55A6CC76EEFC1F5728B5312528BEDB1716382CD5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iDogWalker</string>
 		</dict>

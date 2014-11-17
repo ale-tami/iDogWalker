@@ -48,6 +48,7 @@
         [self.navigationItem.rightBarButtonItem setTintColor:[UIColor clearColor]];
         self.title = [NSString stringWithFormat:@"%@'s Profile", self.sentUser.username];
         self.settingsButton.hidden = YES;
+        self.tableView.allowsSelection = NO;
     }
     
     self.userName.text = self.sentUser.username;
@@ -183,7 +184,6 @@
 {
     if (indexPath.row == 0) {
         [self performSegueWithIdentifier:@"toAddDog" sender:self];
-
     }
 }
 

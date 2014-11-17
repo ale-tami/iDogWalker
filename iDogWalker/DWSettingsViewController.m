@@ -33,6 +33,12 @@
 
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+
+}
+
 - (IBAction)onDone:(id)sender
 {
     [self.uDefaults setFloat:self.searchRadiousSlider.value forKey:searchRadius];
@@ -82,6 +88,7 @@
     
 }
 
+
 - (BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView
 {
     NSString *inputText1 = [[alertView textFieldAtIndex:0] text];
@@ -103,6 +110,10 @@
         [DWUser currentUser].password = [alertView textFieldAtIndex:1].text;
         [[DWUserOperations sharedInstance] saveCurrentUserModifications];
     }
+}
+
+- (IBAction)unwindSegueToSettings:(UIStoryboardSegue*)sender
+{
 }
 
 

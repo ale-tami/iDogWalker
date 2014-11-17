@@ -43,6 +43,7 @@
 		4DAB871719A7B90700388180 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB871619A7B90700388180 /* FacebookSDK.framework */; };
 		4DAFC10D19BF39F500A184CD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAFC10C19BF39F500A184CD /* Social.framework */; };
 		4DAFC10F19BF3A0600A184CD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAFC10E19BF3A0600A184CD /* Accounts.framework */; };
+		4DB5FD091A180ECD0070B010 /* DWPrivacyPolictyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5FD081A180ECD0070B010 /* DWPrivacyPolictyViewController.m */; };
 		4DB62AFD19ABD71D00A595C2 /* DWRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62AFC19ABD71D00A595C2 /* DWRegistrationViewController.m */; };
 		4DB62B0119ABDCD700A595C2 /* DWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0019ABDCD700A595C2 /* DWUser.m */; };
 		4DB62B0419ACC39200A595C2 /* DWUserOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B0319ACC39200A595C2 /* DWUserOperations.m */; };
@@ -53,6 +54,7 @@
 		4DB62B1319AD3F4700A595C2 /* DWProtoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B1219AD3F4700A595C2 /* DWProtoViewController.m */; };
 		4DB62B1619AE657F00A595C2 /* DWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B1519AE657F00A595C2 /* DWTableViewCell.m */; };
 		4DB62B1A19AE675000A595C2 /* DWProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB62B1919AE675000A595C2 /* DWProfileViewController.m */; };
+		4DBBA2881A16E4C500DA82CD /* DWPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBBA2871A16E4C500DA82CD /* DWPinAnnotationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		4DAB871619A7B90700388180 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		4DAFC10C19BF39F500A184CD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4DAFC10E19BF3A0600A184CD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		4DB5FD071A180ECD0070B010 /* DWPrivacyPolictyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWPrivacyPolictyViewController.h; sourceTree = "<group>"; };
+		4DB5FD081A180ECD0070B010 /* DWPrivacyPolictyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWPrivacyPolictyViewController.m; sourceTree = "<group>"; };
 		4DB62AFB19ABD71D00A595C2 /* DWRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWRegistrationViewController.h; sourceTree = "<group>"; };
 		4DB62AFC19ABD71D00A595C2 /* DWRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWRegistrationViewController.m; sourceTree = "<group>"; };
 		4DB62AFF19ABDCD700A595C2 /* DWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWUser.h; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 		4DB62B1519AE657F00A595C2 /* DWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTableViewCell.m; sourceTree = "<group>"; };
 		4DB62B1819AE675000A595C2 /* DWProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWProfileViewController.h; sourceTree = "<group>"; };
 		4DB62B1919AE675000A595C2 /* DWProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWProfileViewController.m; sourceTree = "<group>"; };
+		4DBBA2861A16E4C500DA82CD /* DWPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWPinAnnotationView.h; sourceTree = "<group>"; };
+		4DBBA2871A16E4C500DA82CD /* DWPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWPinAnnotationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +228,7 @@
 		4DAB86CF19A7ADB200388180 /* iDogWalker */ = {
 			isa = PBXGroup;
 			children = (
-				4DB62B1719AE658E00A595C2 /* Subclasses */,
+				4DB62B1719AE658E00A595C2 /* SuperClasses */,
 				4DB62B0D19AD1E8600A595C2 /* ParseObjects */,
 				4DB62AFE19ABD72C00A595C2 /* Operations */,
 				4DAB86D819A7ADB200388180 /* DWAppDelegate.h */,
@@ -240,6 +246,8 @@
 				4DAAFB5419B0B4FA00D1EAE5 /* DWAddDoggieViewController.m */,
 				4DAA33C519BDE6A600873EEF /* DWSettingsViewController.h */,
 				4DAA33C619BDE6A600873EEF /* DWSettingsViewController.m */,
+				4DB5FD071A180ECD0070B010 /* DWPrivacyPolictyViewController.h */,
+				4DB5FD081A180ECD0070B010 /* DWPrivacyPolictyViewController.m */,
 				4DAB86E119A7ADB200388180 /* Images.xcassets */,
 				4DAB86D019A7ADB200388180 /* Supporting Files */,
 			);
@@ -306,15 +314,17 @@
 			name = ParseObjects;
 			sourceTree = "<group>";
 		};
-		4DB62B1719AE658E00A595C2 /* Subclasses */ = {
+		4DB62B1719AE658E00A595C2 /* SuperClasses */ = {
 			isa = PBXGroup;
 			children = (
 				4DB62B1119AD3F4700A595C2 /* DWProtoViewController.h */,
 				4DB62B1219AD3F4700A595C2 /* DWProtoViewController.m */,
 				4DB62B1419AE657F00A595C2 /* DWTableViewCell.h */,
 				4DB62B1519AE657F00A595C2 /* DWTableViewCell.m */,
+				4DBBA2861A16E4C500DA82CD /* DWPinAnnotationView.h */,
+				4DBBA2871A16E4C500DA82CD /* DWPinAnnotationView.m */,
 			);
-			name = Subclasses;
+			name = SuperClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,12 +426,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB5FD091A180ECD0070B010 /* DWPrivacyPolictyViewController.m in Sources */,
 				4DB62B1019AD1EAD00A595C2 /* DWCheckIn.m in Sources */,
 				4DB62B0C19ACE31800A595C2 /* DWMapViewController.m in Sources */,
 				4DAB86D619A7ADB200388180 /* main.m in Sources */,
 				4DB62B0419ACC39200A595C2 /* DWUserOperations.m in Sources */,
 				4DAB86E019A7ADB200388180 /* DWViewController.m in Sources */,
 				4DB62B0719ACC45700A595C2 /* DWOperations.m in Sources */,
+				4DBBA2881A16E4C500DA82CD /* DWPinAnnotationView.m in Sources */,
 				4DB62AFD19ABD71D00A595C2 /* DWRegistrationViewController.m in Sources */,
 				4DAAFB4A19AF7AC600D1EAE5 /* DWDog.m in Sources */,
 				4DB62B1A19AE675000A595C2 /* DWProfileViewController.m in Sources */,
@@ -514,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -546,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -565,6 +577,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDogWalker/iDogWalker-Prefix.pch";
 				INFOPLIST_FILE = "iDogWalker/iDogWalker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -583,6 +596,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDogWalker/iDogWalker-Prefix.pch";
 				INFOPLIST_FILE = "iDogWalker/iDogWalker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -25,9 +25,9 @@ NSString *const checkInButton = @"Go Visible";
 NSString *const annotationText = @"annotation";
 NSString *const userPinTitle = @"YOU!";
 int const regionCoordinateSpan = 0.03;
-float const avatarCornerRadius = 23.0;
-float const pinXOffset = -13;
-float const pinYOffset = -23;
+float const avatarCornerRadius = 15.0;
+float const pinXOffset = -5;
+float const pinYOffset = -20;
 float const secondsForUpdate = 300.0;
 
 #pragma mark -- SettingsViewController
@@ -39,6 +39,7 @@ NSString *const refreshTime = @"refreshTime";
 
 NSString *const heartFilled = @"heartFilled";
 NSString *const placeholder = @"placeholder";
+NSString *const appIconPlaceholder = @"AppIconPlaceholder";
 NSString *const pinImage = @"imagefiles-location_map_pin_blue";
 
 @end
