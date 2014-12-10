@@ -252,8 +252,12 @@
         
         if (dog.isNeedingPartner) {
             cell.loveButton.imageView.image = [UIImage imageNamed:@"heartFilled"];
+            NSLog(@"cellForRowAtIndexPath-Lovebutton filled: %@",cell.loveButton.imageView.image );
+
         } else {
             cell.loveButton.imageView.image = [UIImage imageNamed:@"heart"];
+            NSLog(@"cellForRowAtIndexPath-Lovebutton: %@",cell.loveButton.imageView.image );
+
         }
         
     } else {

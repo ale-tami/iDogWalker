@@ -51,6 +51,8 @@ static void * UserPropertyKey = &UserPropertyKey;
 @property (strong, nonatomic) NSString *stringForButton;
 @property (strong, nonatomic) NSTimer *timer;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property NSMutableDictionary *pinImages;
+
 
 @end
 
@@ -70,6 +72,7 @@ static void * UserPropertyKey = &UserPropertyKey;
     
     [self.mapView setUserTrackingMode:MKUserTrackingModeFollow];
     
+    self.pinImages = [NSMutableDictionary new];
     self.locationManager = [CLLocationManager new];
     [self.locationManager setActivityType:CLActivityTypeFitness];
     
@@ -122,8 +125,14 @@ static void * UserPropertyKey = &UserPropertyKey;
         if (needsHeart) {
              pin.imageView.image = [UIImage imageNamed:heartFilled];
         } else {
+            if ([self.pinImages objectForKey:user.username]) {
+                pin.imageView.image = (UIImage*)[self.pinImages objectForKey:user.username];
+            } else {
                 pin.imageView.file = user.profileImage;
-                [pin.imageView loadInBackground];
+                [pin.imageView loadInBackground:^(UIImage *image, NSError *error) {
+                    [self.pinImages setValue:image forKey:user.username];
+                }];
+            }
         }
     
         pin.animatesDrop = YES;
